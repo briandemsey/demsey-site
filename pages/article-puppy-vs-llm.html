@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>It's Easier to Train a Puppy Than an LLM | Brian Demsey</title>
+    <meta name="description" content="With large language models, the failures hide in plain sight. Yet enterprises are racing to deploy these systems anyway.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Georgia', 'Times New Roman', serif; line-height: 1.7; color: #2c2c2c; background: #faf9f7; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+        header {
+            background: rgba(45, 52, 54, 0.95);
+            padding: 16px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        header .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { color: #fff; font-size: 1.4rem; font-weight: 600; text-decoration: none; }
+        nav { display: flex; gap: 32px; }
+        nav a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 0.95rem; }
+        nav a:hover { color: #fff; }
+
+        .hero {
+            background: linear-gradient(135deg, rgba(45, 52, 54, 0.85), rgba(99, 110, 114, 0.8)),
+                        url('../assets/dog-glasses-laptop.jpg') center/cover no-repeat;
+            color: white;
+            padding: 120px 24px 60px;
+            text-align: center;
+        }
+        .hero h1 { font-size: 2.4rem; font-weight: 400; margin-bottom: 16px; max-width: 900px; margin-left: auto; margin-right: auto; }
+        .hero .subtitle { font-size: 1.1rem; opacity: 0.9; max-width: 700px; margin: 0 auto; font-style: italic; }
+        .hero .meta { margin-top: 20px; font-size: 0.9rem; opacity: 0.7; }
+
+        .article-content { max-width: 800px; margin: 0 auto; padding: 40px 24px; }
+        .article-content img { width: 100%; border-radius: 8px; margin: 24px 0 8px; }
+        .article-content .caption { font-size: 0.85rem; color: #888; text-align: center; margin-bottom: 32px; }
+        .article-content h2 { font-size: 1.6rem; margin-top: 40px; margin-bottom: 16px; color: #2d3436; }
+        .article-content p { font-size: 1.05rem; color: #444; margin-bottom: 18px; line-height: 1.8; }
+        .article-content ul { margin: 16px 0 16px 24px; }
+        .article-content li { font-size: 1.05rem; color: #444; margin-bottom: 10px; line-height: 1.7; }
+        .article-content hr { border: none; border-top: 1px solid #ddd; margin: 32px 0; }
+        .article-content a { color: #bd9280; text-decoration: none; }
+        .article-content a:hover { text-decoration: underline; }
+        .article-content .lead {
+            font-size: 1.15rem;
+            color: #333;
+            font-style: italic;
+            margin-bottom: 28px;
+        }
+
+        .back-link { display: inline-block; margin-bottom: 20px; color: #bd9280; text-decoration: none; font-size: 0.95rem; }
+        .back-link:hover { text-decoration: underline; }
+
+        .author-box {
+            background: #f5f3f0;
+            padding: 24px;
+            border-radius: 8px;
+            margin: 32px 0;
+            border-left: 4px solid #bd9280;
+        }
+        .author-box p { margin-bottom: 0; font-size: 0.95rem; color: #555; }
+
+        footer { background: #2d3436; color: white; padding: 40px 0 20px; margin-top: 40px; }
+        .footer-bottom { text-align: center; color: rgba(255,255,255,0.5); font-size: 0.85rem; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 1.8rem; }
+            nav { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <a href="../index.html" class="logo">Brian Demsey</a>
+        <nav>
+            <a href="../index.html#about">About</a>
+            <a href="../index.html#articles">Articles</a>
+            <a href="../index.html#projects">Projects</a>
+            <a href="../index.html#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <h1>It's Easier to Train a Puppy Than an LLM</h1>
+        <p class="subtitle">At least with a puppy you can smell a mess.</p>
+        <p class="meta">Brian Demsey | Published by The Information | 2025</p>
+    </div>
+</section>
+
+<article class="article-content">
+    <a href="../index.html#articles" class="back-link">&larr; Back to Articles</a>
+
+    <img src="../assets/dog-glasses-laptop.jpg" alt="Attentive puppy in training">
+    <p class="caption">Photo: Unsplash</p>
+
+    <p class="lead">With large language models, the failures hide in plain sight: hallucinated financials in board presentations, misaligned customer responses bleeding conversion rates, or proprietary data leaking through poorly configured prompts. Yet enterprises are racing to deploy these systems anyway, betting billions that fine-tuning will transform generic AI into competitive advantage. They're mostly losing that bet.</p>
+
+    <hr>
+
+    <h2>The $10,000 Question Nobody's Asking</h2>
+
+    <p>Here's what OpenAI and Anthropic won't tell you: Their models are bleeding cash. Anthropic expects to lose $3 billion in 2025 despite hitting $5 billion in annualized revenue. OpenAI burns through even more. The math is brutal—these companies lose money on every API call, subsidizing enterprise experiments with venture capital.</p>
+
+    <p><strong>The dirty secret?</strong> Most enterprises using off-the-shelf models are doing the same thing—hemorrhaging value while pretending AI is transforming their business.</p>
+
+    <p>LLMs respond linearly. They pattern-match based on training data, with no inherent understanding of context. Ask GPT-4 or Claude about geopolitical risk assessment, and you'll get Wikipedia-level analysis unless you build the scaffolding yourself.</p>
+
+    <p>Consider a basic enterprise query: "How large is the threat from Russia compared to China?"</p>
+
+    <p>Without context, you get garbage. With context, you need to specify:</p>
+
+    <ul>
+        <li><strong>Economic parameters:</strong> Russia's $2.1 trillion GDP versus China's $19.7 trillion</li>
+        <li><strong>Military dimensions:</strong> China's 2.2 million active personnel versus Russia's 1.3 million</li>
+        <li><strong>Alliance structures:</strong> NATO's 32 members and $1.3 trillion defense budget</li>
+        <li><strong>Resource leverage:</strong> Russia's energy dependency versus China's 60% control of rare earth production</li>
+    </ul>
+
+    <p>This isn't AI intelligence—it's manual knowledge engineering. The same tedious work enterprises thought they were escaping.</p>
+
+    <hr>
+
+    <h2>The Fine-Tuning Gold Rush</h2>
+
+    <p>Fine-tuning promises salvation. Feed your model proprietary data, the pitch goes, and watch accuracy improve 20-50% on domain-specific tasks.</p>
+
+    <p>The economics are seductive. A fine-tuned model for fraud detection can save millions. Healthcare diagnostics can reduce error rates. Customer service can actually solve problems instead of frustrating users.</p>
+
+    <p>But here's what the vendors won't emphasize: Fine-tuning costs range from $10,000 for proof-of-concepts to millions for production systems. You need clean data—lots of it. You need MLOps infrastructure. You need talent that commands $500,000+ salaries.</p>
+
+    <p><strong>Translation:</strong> Before you can train the model, you need to rebuild your company around it.</p>
+
+    <hr>
+
+    <h2>The Anysphere Exception</h2>
+
+    <p>There's one bright spot in this mess: Anysphere's Cursor, which hit $500 million in annual recurring revenue by actually solving a problem developers have. It doesn't promise to revolutionize coding—it just makes writing code faster with smart completions and edits.</p>
+
+    <p><strong>The lesson? Narrow, practical AI applications work.</strong></p>
+
+    <p>Grand enterprise transformation doesn't. Microsoft seems to understand this. They're hedging their OpenAI bet by integrating Anthropic's Claude into Office 365. Not because they're abandoning OpenAI—the companies remain deeply intertwined—but because different models excel at different tasks.</p>
+
+    <p>This multi-model future is where enterprises should focus. Not on training one perfect model, but on orchestrating many specialized ones.</p>
+
+    <hr>
+
+    <h2>The Reality Check</h2>
+
+    <p>Census data shows AI adoption among U.S. firms doubled to 9.7% by August 2025. In the Information sector, it's 25%. In food services, 2.5%. The pattern is clear: AI works where digital infrastructure already exists, where workflows are already structured, where data is already clean.</p>
+
+    <p>For everyone else, the puppy training continues. Except unlike puppies, these models never quite learn to stop making messes—they just get better at hiding them in plausible-sounding responses.</p>
+
+    <p>The winners won't be companies that fine-tune best. They'll be companies that recognize fine-tuning's limits and build around them. That means:</p>
+
+    <ul>
+        <li>Accepting narrow AI wins over transformation fantasies</li>
+        <li>Investing in data infrastructure before model training</li>
+        <li>Using multiple models for different tasks</li>
+        <li>Measuring actual ROI, not ARR projections</li>
+    </ul>
+
+    <p>The alternative? Spending millions to discover what puppy owners learn for free: <strong>Some messes are inevitable.</strong></p>
+
+    <p>The question is how long will you have to wait before the puppy is trained properly.</p>
+
+    <div class="author-box">
+        <p><strong>Brian Demsey</strong> is the founder and CEO of Hallucinations.cloud LLC, an AI safety company focused on detecting misinformation through multi-model verification. This article was originally published by The Information.</p>
+    </div>
+
+</article>
+
+<footer>
+    <div class="container">
+        <div class="footer-bottom">
+            <p>&copy; 2026 Brian Demsey. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

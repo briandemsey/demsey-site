@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM Hallucinations Explained | Brian Demsey</title>
+    <meta name="description" content="A practical analysis of large language model hallucinations, why they persist, and how verification is reshaping trust, governance, and enterprise AI adoption.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Georgia', 'Times New Roman', serif; line-height: 1.7; color: #2c2c2c; background: #faf9f7; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+        /* Header */
+        header {
+            background: rgba(45, 52, 54, 0.95);
+            padding: 16px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        header .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { color: #fff; font-size: 1.4rem; font-weight: 600; text-decoration: none; }
+        nav { display: flex; gap: 32px; }
+        nav a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 0.95rem; }
+        nav a:hover { color: #fff; }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, rgba(45, 52, 54, 0.85), rgba(99, 110, 114, 0.8)),
+                        url('../assets/ai-brain.jpg') center/cover no-repeat;
+            color: white;
+            padding: 120px 24px 60px;
+            text-align: center;
+        }
+        .hero h1 { font-size: 2.4rem; font-weight: 400; margin-bottom: 16px; max-width: 900px; margin-left: auto; margin-right: auto; }
+        .hero .subtitle { font-size: 1.1rem; opacity: 0.9; max-width: 700px; margin: 0 auto; font-style: italic; }
+        .hero .meta { margin-top: 20px; font-size: 0.9rem; opacity: 0.7; }
+
+        /* Article */
+        .article-content { max-width: 800px; margin: 0 auto; padding: 40px 24px; }
+        .article-content h2 { font-size: 1.6rem; margin-top: 40px; margin-bottom: 16px; color: #2d3436; }
+        .article-content h3 { font-size: 1.2rem; margin-top: 28px; margin-bottom: 12px; color: #444; }
+        .article-content p { font-size: 1.05rem; color: #444; margin-bottom: 18px; line-height: 1.8; }
+        .article-content ul { margin: 16px 0 16px 24px; }
+        .article-content li { font-size: 1.05rem; color: #444; margin-bottom: 10px; line-height: 1.7; }
+        .article-content hr { border: none; border-top: 1px solid #ddd; margin: 32px 0; }
+        .article-content a { color: #bd9280; text-decoration: none; }
+        .article-content a:hover { text-decoration: underline; }
+
+        /* Back link */
+        .back-link { display: inline-block; margin-bottom: 20px; color: #bd9280; text-decoration: none; font-size: 0.95rem; }
+        .back-link:hover { text-decoration: underline; }
+
+        /* Footer */
+        footer { background: #2d3436; color: white; padding: 40px 0 20px; margin-top: 40px; }
+        .footer-bottom { text-align: center; color: rgba(255,255,255,0.5); font-size: 0.85rem; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 1.8rem; }
+            nav { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <a href="../index.html" class="logo">Brian Demsey</a>
+        <nav>
+            <a href="../index.html#about">About</a>
+            <a href="../index.html#articles">Articles</a>
+            <a href="../index.html#projects">Projects</a>
+            <a href="../index.html#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <h1>Large Language Model (LLM) Hallucinations Explained</h1>
+        <p class="subtitle">Why AI Verification Is Becoming Critical Infrastructure</p>
+        <p class="meta">2026 Report | 12 min read</p>
+    </div>
+</section>
+
+<article class="article-content">
+    <a href="../index.html#articles" class="back-link">&larr; Back to Articles</a>
+
+    <h2>The Trust Problem at the Core of AI Adoption</h2>
+    <p>Large Language Models (LLMs) are now embedded in legal research, healthcare analysis, financial modeling, customer support, and internal decision systems. As AI adoption expands, so does exposure to a persistent failure mode: LLM hallucinations.</p>
+    <p>Hallucinations occur when an AI system generates information that appears accurate but is factually incorrect, unverifiable, or fabricated. These failures are not rare anomalies. They are a structural outcome of how probabilistic language models operate.</p>
+    <p>As organizations move from experimentation to production AI systems, hallucinations are no longer a technical curiosity. They represent operational risk, regulatory risk, and reputational risk.</p>
+
+    <hr>
+
+    <h2>Are LLM Hallucinations Improving Over Time?</h2>
+    <p>Yes, but only in limited and often misunderstood ways.</p>
+    <p>Modern large language models hallucinate less frequently in narrow, well-defined tasks. They are more fluent, more coherent, and more convincing. However, they are not significantly better at ensuring factual accuracy across open-ended or high-stakes use cases.</p>
+    <p>As model capabilities increase, incorrect outputs become harder to detect. The result is a paradox: fewer obvious errors, but higher confidence in subtle inaccuracies.</p>
+
+    <hr>
+
+    <h2>What Causes LLM Hallucinations?</h2>
+    <p>Large language models do not verify facts or retrieve truth by default. They generate statistically plausible language sequences based on patterns learned from training data and the structure of a given prompt.</p>
+    <p>Hallucinations typically arise when:</p>
+    <ul>
+        <li>The model lacks sufficient grounding in authoritative data</li>
+        <li>Multiple plausible answers exist with no clear resolution</li>
+        <li>The prompt implies certainty where none exists</li>
+    </ul>
+
+    <h3>Plausibility</h3>
+    <p>Outputs sound confident, logical, and well-structured.</p>
+
+    <h3>Opacity</h3>
+    <p>There is no built-in truth indicator or confidence score.</p>
+
+    <h3>Reproducibility Drift</h3>
+    <p>Identical prompts can yield different answers across models or even across separate runs of the same model.</p>
+
+    <hr>
+
+    <h2>Why Bigger Models Have Not Eliminated Hallucinations</h2>
+    <p>Model scaling improves linguistic capability and contextual awareness. It does not provide an internal mechanism for verifying truth.</p>
+
+    <h3>Training Data Limitations</h3>
+    <p>Models inherit inaccuracies, outdated information, and bias present in their source data.</p>
+
+    <h3>Objective Misalignment</h3>
+    <p>Language models are optimized for likelihood and coherence, not factual correctness.</p>
+
+    <h3>Single-Model Perspective</h3>
+    <p>A single model generates a single answer without independent validation.</p>
+
+    <hr>
+
+    <h2>The Shift From AI Capability to AI Trust Architecture</h2>
+    <p>Instead of asking which model performs best, organizations are asking how they can determine whether an AI-generated answer is reliable.</p>
+    <p>This shift mirrors earlier technology cycles. Databases require transaction integrity. Networks require security protocols. AI systems now require verification layers.</p>
+    <p><strong>Trust is becoming infrastructure.</strong></p>
+
+    <hr>
+
+    <h2>A Verification-Centered Approach to Reliable AI</h2>
+
+    <h3>Parallel Intelligence</h3>
+    <p>The same query is evaluated across multiple independent language models. Agreement becomes a signal of reliability.</p>
+
+    <h3>Cross-Domain Grounding</h3>
+    <p>Claims are checked against authoritative sources such as academic publications, government data, and institutional records.</p>
+
+    <h3>Quantified Trust Metrics</h3>
+    <p>Outputs are scored across dimensions like confidence, safety, and quality rather than treated as simply true or false.</p>
+
+    <h3>Human Oversight</h3>
+    <p>Automated systems flag uncertainty and risk. Humans review edge cases and ethical implications.</p>
+
+    <hr>
+
+    <h2>Why Multi-Model Verification Is More Effective</h2>
+    <p>A single model cannot reliably evaluate its own output. Multi-model verification introduces important advantages:</p>
+    <ul>
+        <li>Detection of inconsistent or conflicting answers</li>
+        <li>Reduction of bias from any single training corpus</li>
+        <li>Improved reproducibility when independent systems converge</li>
+    </ul>
+
+    <hr>
+
+    <h2>The Future of AI: From Output Generation to Accountability</h2>
+    <p>The next phase of AI adoption will be shaped by who can:</p>
+    <ul>
+        <li>Demonstrate accuracy</li>
+        <li>Quantify risk</li>
+        <li>Explain failures</li>
+        <li>Align automation with human oversight</li>
+    </ul>
+    <p>Hallucinations will persist. Their impact depends on how well they are detected, measured, and managed.</p>
+    <p><strong>That distinction separates experimental AI from production infrastructure.</strong></p>
+
+</article>
+
+<footer>
+    <div class="container">
+        <div class="footer-bottom">
+            <p>&copy; 2026 Brian Demsey. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brian Demsey | Actuary, Entrepreneur, AI Explorer</title>
+    <meta name="description" content="More or less a pictorial memoir. A lifetime of personal and business travels from actuary to AI safety advocate.">
+    <meta name="author" content="Brian Demsey">
+    <meta property="og:title" content="Brian Demsey">
+    <meta property="og:description" content="More or less a pictorial memoir.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://demsey.com">
+    <link rel="canonical" href="https://demsey.com" />
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            line-height: 1.7;
+            color: #2c2c2c;
+            background: #faf9f7;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+        /* Header */
+        header {
+            background: rgba(45, 52, 54, 0.95);
+            padding: 16px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            color: #fff;
+            font-size: 1.4rem;
+            font-weight: 600;
+            text-decoration: none;
+            font-family: 'Georgia', serif;
+        }
+        nav { display: flex; gap: 32px; }
+        nav a {
+            color: rgba(255,255,255,0.85);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+        nav a:hover { color: #fff; }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, rgba(45, 52, 54, 0.8), rgba(99, 110, 114, 0.7)),
+                        url('assets/hero-image.jpg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 60px 24px 8px;
+        }
+        .hero-content { max-width: 800px; }
+        .hero h1 {
+            font-size: 2rem;
+            font-weight: 300;
+            margin-bottom: 4px;
+            letter-spacing: 1px;
+        }
+        .hero .tagline {
+            font-size: 1rem;
+            font-style: italic;
+            opacity: 0.9;
+            margin-bottom: 4px;
+        }
+        .hero .subtitle {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .btn {
+            display: inline-block;
+            padding: 16px 40px;
+            border-radius: 4px;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: all 0.3s;
+            font-family: 'Georgia', serif;
+        }
+        .btn-primary {
+            background: #bd9280;
+            color: white;
+            border: 2px solid #bd9280;
+        }
+        .btn-primary:hover {
+            background: transparent;
+            color: white;
+        }
+
+        /* Sections */
+        section { padding: 10px 0; }
+        section:nth-child(even) { background: #fff; }
+        .section-header {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .section-header h2 {
+            font-size: 2.5rem;
+            font-weight: 400;
+            margin-bottom: 16px;
+            color: #2d3436;
+        }
+        .section-header p {
+            font-size: 1.15rem;
+            color: #636e72;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* About */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        .about-text p {
+            font-size: 1.1rem;
+            color: #444;
+            margin-bottom: 20px;
+            line-height: 1.9;
+        }
+        .about-image img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+        }
+
+        /* Quote */
+        .quote-section {
+            background: linear-gradient(135deg, #2d3436, #636e72);
+            color: white;
+            text-align: center;
+            padding: 80px 24px;
+        }
+        .quote-section blockquote {
+            font-size: 1.8rem;
+            font-style: italic;
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* Projects */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+        }
+        .project-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+        }
+        .project-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 16px;
+            color: #2d3436;
+        }
+        .project-card p {
+            color: #636e72;
+            margin-bottom: 24px;
+            font-size: 1rem;
+        }
+        .project-card a {
+            color: #bd9280;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .project-card a:hover { text-decoration: underline; }
+
+        /* Contact */
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+        .contact-info h3 {
+            font-size: 1.3rem;
+            margin-bottom: 24px;
+            color: #2d3436;
+        }
+        .contact-info p {
+            color: #636e72;
+            margin-bottom: 12px;
+            font-size: 1.05rem;
+        }
+        .contact-info a {
+            color: #bd9280;
+            text-decoration: none;
+        }
+        .contact-info a:hover { text-decoration: underline; }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 16px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 1rem;
+        }
+        .contact-form textarea { min-height: 150px; resize: vertical; }
+        .contact-form button {
+            background: #bd9280;
+            color: white;
+            padding: 16px 40px;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            font-family: inherit;
+            transition: background 0.3s;
+        }
+        .contact-form button:hover { background: #a67c6a; }
+
+        /* Footer */
+        footer {
+            background: #2d3436;
+            color: white;
+            padding: 60px 0 24px;
+        }
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 32px;
+            margin-bottom: 48px;
+        }
+        .footer-about p {
+            color: rgba(255,255,255,0.7);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+        .footer-links h4 {
+            font-size: 1rem;
+            margin-bottom: 20px;
+            color: rgba(255,255,255,0.9);
+        }
+        .footer-links a {
+            display: block;
+            color: rgba(255,255,255,0.6);
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+        .footer-links a:hover { color: #fff; }
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 24px;
+            text-align: center;
+            color: rgba(255,255,255,0.5);
+            font-size: 0.85rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .about-content,
+            .contact-content,
+            .footer-content { grid-template-columns: 1fr; }
+            nav { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="container">
+        <a href="index.html" class="logo">Brian Demsey</a>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#articles">Articles</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Brian Demsey</h1>
+        <p class="tagline">More or less a pictorial memoir</p>
+        <p class="subtitle">A lifetime of personal & business travels</p>
+    </div>
+</section>
+
+<!-- About -->
+<section id="about">
+    <div class="container">
+        <div class="section-header">
+            <h2>About Brian</h2>
+            <p>For over half a century, I've worked with numbers—numbers that mattered</p>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I spent over fifty years as an actuary, entrepreneur, and consultant, helping organizations navigate the complexities of health and retirement planning, risk management, and enterprise technology.</p>
+                <p>In 2023, everything changed. I began exploring AI technology and asked ChatGPT over 5,000 questions. What I discovered was both brilliant and troubling: these systems could fabricate information with absolute confidence, presenting fiction as fact.</p>
+                <p>This revelation led me to create <strong>Hallucinations.cloud</strong>—a platform dedicated to tracking AI errors and their implications. I subsequently launched the <strong>"Brian & AI: Hallucinations in the Wild"</strong> podcast, designed for general audiences interested in understanding when AI tells the truth versus when it misleads.</p>
+                <p><em>In a world where machines talk like humans, we need to know when they're telling the truth—and when they're not.</em></p>
+            </div>
+            <div class="about-image">
+                <img src="assets/hero-image.jpg" alt="Brian Demsey">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Quote -->
+<section class="quote-section">
+    <div class="container">
+        <blockquote>"In a world where machines talk like humans, we need to know when they're telling the truth—and when they're not."</blockquote>
+    </div>
+</section>
+
+<!-- Articles -->
+<section id="articles">
+    <div class="container">
+        <div class="section-header">
+            <h2>Articles</h2>
+            <p>Insights on AI, technology, and the future</p>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>LLM Hallucinations Explained</h3>
+                <p>An in-depth look at where we stand with AI reliability and what it means for businesses and consumers.</p>
+                <a href="pages/article-ai-hallucinations-2026.html">Read Article &rarr;</a>
+            </div>
+            <div class="project-card">
+                <h3>The Evel Knievel Problem</h3>
+                <p>Why the AI race demands multi-model verification—lessons from a legendary daredevil.</p>
+                <a href="pages/article-evel-knievel-problem.html">Read Article &rarr;</a>
+            </div>
+            <div class="project-card">
+                <h3>It's Easier to Train a Puppy Than an LLM</h3>
+                <p>Why teaching AI to behave is harder than house-training your dog.</p>
+                <a href="pages/article-puppy-vs-llm.html">Read Article &rarr;</a>
+            </div>
+            <div class="project-card">
+                <h3>AI's Silent War on Women</h3>
+                <p>96% of all deepfakes target women. The verification vacuum must be addressed.</p>
+                <a href="pages/article-ai-war-on-women.html">Read Article &rarr;</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+    <div class="container">
+        <div class="section-header">
+            <h2>Projects & Ventures</h2>
+            <p>Exploring the intersection of technology, truth, and trust</p>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Hallucinations.cloud</h3>
+                <p>A multi-model AI verification platform that tracks errors, measures reliability, and helps organizations understand when to trust AI outputs.</p>
+                <a href="https://hallucinations.cloud" target="_blank">Visit Site &rarr;</a>
+            </div>
+            <div class="project-card">
+                <h3>Brian & AI Podcast</h3>
+                <p>Hallucinations in the Wild—a podcast exploring AI accuracy for general audiences who want to understand the truth about artificial intelligence.</p>
+                <a href="https://brianandai.com" target="_blank">Listen Now &rarr;</a>
+            </div>
+            <div class="project-card">
+                <h3>br-AI-ns.net</h3>
+                <p>Additional resources and insights on artificial intelligence, machine learning, and the future of human-AI collaboration.</p>
+                <a href="https://br-AI-ns.net" target="_blank">Explore &rarr;</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+    <div class="container">
+        <div class="section-header">
+            <h2>Get in Touch</h2>
+            <p>Questions, comments, or just want to connect?</p>
+        </div>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p><strong>Location:</strong> Spearfish, SD, USA</p>
+                <p><strong>Email:</strong> <a href="mailto:bdemsey@demsey.com">bdemsey@demsey.com</a></p>
+                <p><strong>Email:</strong> <a href="mailto:brian@hallucinations.cloud">brian@hallucinations.cloud</a></p>
+                <p><strong>Email:</strong> <a href="mailto:bdemsey@gmail.com">bdemsey@gmail.com</a></p>
+                <br>
+                <h3>Connect</h3>
+                <p><a href="https://www.facebook.com/profile.php?id=61575552352846" target="_blank">Facebook</a></p>
+                <p><a href="https://www.buzzsprout.com/2471567" target="_blank">Podcast on Buzzsprout</a></p>
+            </div>
+            <div class="contact-form">
+                <form action="#" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3 style="margin-bottom: 16px; font-size: 1.2rem;">Brian Demsey</h3>
+                <p>Actuary, entrepreneur, and AI safety advocate with over 50 years of experience in enterprise technology. Now focused on making AI more trustworthy through multi-model verification.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Articles</h4>
+                <a href="pages/article-ai-hallucinations-2026.html">LLM Hallucinations Explained</a>
+                <a href="pages/article-evel-knievel-problem.html">The Evel Knievel Problem</a>
+                <a href="pages/article-puppy-vs-llm.html">Puppy vs LLM</a>
+                <a href="pages/article-ai-war-on-women.html">AI's War on Women</a>
+            </div>
+            <div class="footer-links">
+                <h4>Projects</h4>
+                <a href="https://hallucinations.cloud">Hallucinations.cloud</a>
+                <a href="https://brianandai.com">Brian & AI Podcast</a>
+                <a href="https://br-AI-ns.net">br-AI-ns.net</a>
+            </div>
+            <div class="footer-links">
+                <h4>Connect</h4>
+                <a href="mailto:bdemsey@demsey.com">Email</a>
+                <a href="https://www.facebook.com/profile.php?id=61575552352846">Facebook</a>
+                <a href="https://www.buzzsprout.com/2471567">Podcast</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Brian Demsey. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
