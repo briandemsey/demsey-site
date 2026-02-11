@@ -23,17 +23,35 @@
 
         /* Header */
         header {
-            background: #fff;
-            padding: 20px 0;
-            text-align: center;
+            background: rgba(45, 52, 54, 0.95);
+            padding: 16px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
         .logo {
-            color: #2c2c2c;
-            font-size: 1.8rem;
-            font-weight: 400;
+            color: #fff;
+            font-size: 1.4rem;
+            font-weight: 600;
             text-decoration: none;
-            font-family: 'Georgia', serif;
-            font-style: italic;
+        }
+        nav {
+            display: flex;
+            gap: 32px;
+        }
+        nav a {
+            color: rgba(255,255,255,0.85);
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+        nav a:hover {
+            color: #fff;
         }
 
         /* Hero - Full width background image */
@@ -43,6 +61,7 @@
             display: flex;
             align-items: center;
             position: relative;
+            padding-top: 60px;
         }
         .hero-content {
             padding: 60px;
@@ -287,6 +306,7 @@
             .contact-content,
             .articles-grid { grid-template-columns: 1fr; }
             .narrative-image { order: -1; }
+            nav { display: none; }
         }
     </style>
 </head>
@@ -294,7 +314,15 @@
 
 <!-- Header -->
 <header>
-    <a href="index.html" class="logo">Brian Demsey</a>
+    <div class="container">
+        <a href="index.html" class="logo">Brian Demsey</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#articles">Articles</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
 </header>
 
 <!-- Hero - Brick wall photo as background -->
