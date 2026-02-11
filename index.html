@@ -303,9 +303,9 @@
         }
         .gallery-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
             gap: 24px;
-            max-width: 1000px;
+            max-width: 900px;
             margin: 0 auto;
         }
         .gallery-item {
@@ -343,11 +343,8 @@
             .about-content,
             .contact-content,
             .footer-content { grid-template-columns: 1fr; }
-            .gallery-grid { grid-template-columns: 1fr 1fr; }
-            nav { display: none; }
-        }
-        @media (max-width: 480px) {
             .gallery-grid { grid-template-columns: 1fr; }
+            nav { display: none; }
         }
     </style>
 </head>
@@ -398,46 +395,16 @@
         </div>
         <div class="gallery-grid">
             <div class="gallery-item">
-                <div class="placeholder">
-                    <strong>PLACEHOLDER 1</strong>
-                    Gallery Image 1<br>
-                    <em>(gallery-1.jpg)</em>
-                </div>
+                <img src="assets/gallery-1.png" alt="Beckman Laser Institute Newsletter - Brian Demsey elected Chairman of the Board, Summer 1997">
             </div>
             <div class="gallery-item">
-                <div class="placeholder">
-                    <strong>PLACEHOLDER 2</strong>
-                    Gallery Image 2<br>
-                    <em>(gallery-2.jpg)</em>
-                </div>
+                <img src="assets/gallery-2.jpg" alt="Brian Demsey at historic brick wall">
             </div>
             <div class="gallery-item">
-                <div class="placeholder">
-                    <strong>PLACEHOLDER 3</strong>
-                    Gallery Image 3<br>
-                    <em>(gallery-3.jpg)</em>
-                </div>
+                <img src="assets/gallery-3.jpg" alt="Brian Demsey stand-up paddleboarding">
             </div>
             <div class="gallery-item">
-                <div class="placeholder">
-                    <strong>PLACEHOLDER 4</strong>
-                    Gallery Image 4<br>
-                    <em>(gallery-4.jpg)</em>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <div class="placeholder">
-                    <strong>PLACEHOLDER 5</strong>
-                    Gallery Image 5<br>
-                    <em>(gallery-5.jpg)</em>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <div class="placeholder">
-                    <strong>PLACEHOLDER 6</strong>
-                    Gallery Image 6<br>
-                    <em>(gallery-6.jpg)</em>
-                </div>
+                <img src="assets/gallery-4.jpg" alt="Brian Demsey snowshoeing in the mountains">
             </div>
         </div>
     </div>
