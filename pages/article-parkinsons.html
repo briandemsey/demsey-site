@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Parkinsons Misdiagnosis | Brian Demsey</title>
+    <meta name="description" content="When machines are smarter than a five-minute exam">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Georgia', 'Times New Roman', serif; line-height: 1.7; color: #2c2c2c; background: #faf9f7; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        header { background: rgba(45, 52, 54, 0.95); padding: 16px 0; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        header .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { color: #fff; font-size: 1.4rem; font-weight: 600; text-decoration: none; }
+        nav { display: flex; gap: 32px; }
+        nav a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 0.95rem; }
+        nav a:hover { color: #fff; }
+        .hero { background: linear-gradient(135deg, rgba(45, 52, 54, 0.85), rgba(99, 110, 114, 0.8)), url('../assets/gallery-2.jpg') center/cover no-repeat; color: white; padding: 120px 24px 60px; text-align: center; }
+        .hero h1 { font-size: 2.4rem; font-weight: 400; margin-bottom: 16px; max-width: 900px; margin-left: auto; margin-right: auto; }
+        .hero .subtitle { font-size: 1.1rem; opacity: 0.9; max-width: 700px; margin: 0 auto; font-style: italic; }
+        .hero .meta { margin-top: 20px; font-size: 0.9rem; opacity: 0.7; }
+        .article-content { max-width: 800px; margin: 0 auto; padding: 40px 24px; }
+        .article-content h2 { font-size: 1.6rem; margin-top: 40px; margin-bottom: 16px; color: #2d3436; }
+        .article-content p { font-size: 1.05rem; color: #444; margin-bottom: 18px; line-height: 1.8; }
+        .article-content ul { margin: 16px 0 16px 24px; }
+        .article-content li { font-size: 1.05rem; color: #444; margin-bottom: 10px; line-height: 1.7; }
+        .article-content hr { border: none; border-top: 1px solid #ddd; margin: 32px 0; }
+        .article-content a { color: #bd9280; text-decoration: none; }
+        .article-content a:hover { text-decoration: underline; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #bd9280; text-decoration: none; font-size: 0.95rem; }
+        .back-link:hover { text-decoration: underline; }
+        .author-box { background: #f5f3f0; padding: 24px; border-radius: 8px; margin: 32px 0; border-left: 4px solid #bd9280; }
+        .author-box p { margin-bottom: 0; font-size: 0.95rem; color: #555; }
+        footer { background: #2d3436; color: white; padding: 40px 0 20px; margin-top: 40px; }
+        .footer-bottom { text-align: center; color: rgba(255,255,255,0.5); font-size: 0.85rem; }
+        @media (max-width: 768px) { .hero h1 { font-size: 1.8rem; } nav { display: none; } }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <a href="../index.html" class="logo">Brian Demsey</a>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../index.html#articles">Articles</a>
+            <a href="../index.html#gallery">Gallery</a>
+            <a href="../index.html#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+<section class="hero">
+    <div class="container">
+        <h1>The Parkinsons Misdiagnosis</h1>
+        <p class="subtitle">When machines are smarter than a five-minute exam</p>
+        <p class="meta">Brian Demsey | December 2025</p>
+    </div>
+</section>
+<article class="article-content">
+    <a href="../index.html#articles" class="back-link">&larr; Back to Articles</a>
+    <p>Two years ago, at 81, a neurologist told me I had Parkinson's disease. The diagnosis took five minutes, based on symptoms and a physical exam. No brain scan. No biomarker test. Just pattern-matching against a checklist-precisely the way a large language model operates.</p>
+    <p>For six months, I took carbidopa/levodopa, the standard Parkinson's medication. There was no improvement. Only after the medication failed did my neurologist order a brain scan. It confirmed what I had suspected from the beginning: I did not have Parkinson's disease. I still don't.</p>
+    <p>Reading Meredith Wadman's recent Wired article on the environmental causes of Parkinson's, I was struck not by the TCE findings-compelling as they are-but by what the article doesn't examine: the diagnostic crisis that makes all epidemiological claims about Parkinson's questionable in the first place.</p>
+    <h2>The 20% Problem</h2>
+    <p>The research is damning. A 2025 Finnish study published in Neurology found that 13.3% of Parkinson's diagnoses were revised, most within two years. A meta-analysis of autopsy-confirmed studies showed overall clinical diagnostic accuracy of only 80.6%-meaning roughly one in five diagnoses is wrong. Movement disorder specialists fare only slightly better: 79.6% accuracy initially, 83.9% after follow-up.</p>
+    <p>Most troubling: "Accuracy did not significantly improve in the last 25 years," the researchers concluded. Despite DaTscan imaging being FDA-approved since 2011, despite alpha-synuclein biomarker tests showing 86-100% sensitivity, the standard practice remains: symptoms   diagnosis   medication   imaging only if medication fails.</p>
+    <p>I experienced this sequence exactly. The scan that ruled out my Parkinson's should have come first. Instead, it came after six months of unnecessary medication-medication with its own side effects, its own costs, its own impact on a body that didn't need it.</p>
+    <h2>When Patients Know More Than the Algorithm</h2>
+    <p>I am not anti-medicine. At 59, I suffered a heart attack. I now have 12 stents in my coronary arteries. I am 83 years old because doctors and the body of medical data saved my life.</p>
+    <p>But I knew I didn't have Parkinson's. How? Because I know my body. Because I paid attention to what the medication was and wasn't doing. Because I asked questions that the diagnostic algorithm didn't.</p>
+    <p>This is the parallel that troubles me: Just as large language models like ChatGPT are trained on vast datasets but lack judgment, so too has medicine become increasingly data-heavy and judgment-light. The LLMs hallucinate-they generate confident-sounding nonsense. Medicine hallucinates too, diagnosing conditions that don't exist while the patient funds the error.</p>
+    <p>The Wired article celebrates Sam Goldman's Camp Lejeune study showing Marines exposed to TCE had 70% higher Parkinson's risk. But if 20% of Parkinson's diagnoses are wrong, what does that do to the epidemiology? How many of Goldman's 430 diagnosed veterans actually had Parkinson's? The article treats the ICD diagnostic codes in VA medical records as ground truth. My experience suggests otherwise.</p>
+    <p>Who Pays for the Errors?</p>
+    <p>Here's the economic reality the Wired article doesn't address:</p>
+    <p>Healthcare as a Percentage of GDP:</p>
+    <h2>2005: 15.9%</h2>
+    <h2>2015: 17.4%</h2>
+    <h2>2023: 17.6%</h2>
+    <h2>2024: Over 18%</h2>
+    <h2>Projected 2033: 20.3%</h2>
+    <p>We are barreling toward spending one-fifth of our entire economy on healthcare. And who bears this burden?</p>
+    <p>The Shift to Individuals:</p>
+    <p>From 2005 to 2024, Medicare Part B premiums increased an average of 5.5% annually, while Social Security's cost-of-living adjustments averaged only 2.6%. The premium gap compounds relentlessly:</p>
+    <p>That's a 137% increase from 2005 to 2025, while Social Security benefits barely kept pace with inflation.</p>
+    <p>For older Americans, Social Security benefits that were once designated for retirement income are now systematically redirected to healthcare. The Medicare Part B premium is automatically deducted from Social Security checks-$185 per month in 2025, rising to $202.90 in 2026. Add Part D prescription coverage, Medigap premiums, and out-of-pocket costs, and a significant portion of the retirement safety net flows directly back to the medical system.</p>
+    <p>Between 2006 and 2016, out-of-pocket costs for Americans with employer-sponsored health coverage rose faster than what their insurers paid. The percentage of workers with deductibles over $1,000 grew from 10% in 2006 to 51% in 2016. High-deductible plans shifted costs from the healthy to the sick-from premiums spread across everyone to bills concentrated on those who actually need care.</p>
+    <h2>The AI Parallel: Errors Funded by Users</h2>
+    <p>When ChatGPT hallucinates-when it confidently generates false information about legal cases or scientific studies-the user bears the cost of verification, correction, or the consequences of acting on bad information. OpenAI's revenue grows regardless of accuracy.</p>
+    <p>Medicine operates on the same model. I paid for six months of Parkinson's medication I didn't need. I paid for the office visits that prescribed it. I paid for the diagnostic imaging that finally ruled it out. My insurance (and Medicare) paid more. The neurologist who made the initial diagnosis suffered no consequence for the error. The pharmaceutical company that manufactured carbidopa/levodopa profited regardless.</p>
+    <p>The Wired article frames Parkinson's as an environmental crisis caused by TCE exposure. Perhaps. But it's also a diagnostic crisis in which the system has no feedback mechanism for error, no economic penalty for wrong answers, and every incentive to diagnose and treat rather than to confirm and wait.</p>
+    <h2>What I Would Tell the Reader</h2>
+    <p>I'm 83. I started programming in Fortran in the 1960s. I founded technology companies, built unified benefits platforms for Fortune 100 companies, and now run an AI safety company focused on detecting hallucinations in large language models. I've spent a lifetime distinguishing signal from noise.</p>
+    <p>Here's what I've learned: Don't lament. Engage.</p>
+    <p>The Wired article's anecdotes span 40 years, from Bill Langston's "frozen addicts" in 1982 to Amy Lindberg's diagnosis today. It's all old news dressed up as new discovery. The environmental theory of Parkinson's has been on the shelf for decades, as the article itself acknowledges. What's actually new is the diagnostic technology-alpha-synuclein assays, DaTscan imaging, skin biopsies-that could confirm or rule out Parkinson's before years of medication.</p>
+    <p>Yet the practice of medicine hasn't caught up. The same symptom-based diagnosis that misidentified my condition is the same process identifying the Parkinson's cases in Goldman's Camp Lejeune study.</p>
+    <p>To the researchers: Your environmental findings may be real. But clean up the diagnostic foundation first. A 20% error rate corrupts everything built on top of it.</p>
+    <p>To the patients: You know your body. If the medication isn't working, say so. Insist on imaging. Insist on biomarker tests. The tools exist. Use them.</p>
+    <p>To the policymakers: Healthcare cannot consume 20% of GDP with a 20% diagnostic error rate. The math doesn't work. The system is extracting ever-larger payments for ever-uncertain results.</p>
+    <p>To Wired: The water may indeed be part of the problem. But so is a medical system that diagnoses first and confirms later-if at all.</p>
+    <p>Brian Demsey is an actuary and  founder and CEO of Hallucinations.cloud LLC, an AI safety company focused on detecting misinformation and inconsistencies in AI systems. He writes from Spearfish, South Dakota.</p>
+    <div class="author-box">
+        <p><strong>Brian Demsey</strong> is the founder and CEO of Hallucinations.cloud LLC, an AI safety company focused on multi-model truth verification. He has over fifty years of experience in enterprise technology.</p>
+    </div>
+</article>
+<footer>
+    <div class="container">
+        <div class="footer-bottom">
+            <p>&copy; 2026 Brian Demsey. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

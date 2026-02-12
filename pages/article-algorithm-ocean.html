@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>When the Algorithm Meets the Ocean | Brian Demsey</title>
+    <meta name="description" content="What outrigger racing teaches us about software">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Georgia', 'Times New Roman', serif; line-height: 1.7; color: #2c2c2c; background: #faf9f7; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        header { background: rgba(45, 52, 54, 0.95); padding: 16px 0; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        header .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { color: #fff; font-size: 1.4rem; font-weight: 600; text-decoration: none; }
+        nav { display: flex; gap: 32px; }
+        nav a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 0.95rem; }
+        nav a:hover { color: #fff; }
+        .hero { background: linear-gradient(135deg, rgba(45, 52, 54, 0.85), rgba(99, 110, 114, 0.8)), url('../assets/gallery-2.jpg') center/cover no-repeat; color: white; padding: 120px 24px 60px; text-align: center; }
+        .hero h1 { font-size: 2.4rem; font-weight: 400; margin-bottom: 16px; max-width: 900px; margin-left: auto; margin-right: auto; }
+        .hero .subtitle { font-size: 1.1rem; opacity: 0.9; max-width: 700px; margin: 0 auto; font-style: italic; }
+        .hero .meta { margin-top: 20px; font-size: 0.9rem; opacity: 0.7; }
+        .article-content { max-width: 800px; margin: 0 auto; padding: 40px 24px; }
+        .article-content h2 { font-size: 1.6rem; margin-top: 40px; margin-bottom: 16px; color: #2d3436; }
+        .article-content p { font-size: 1.05rem; color: #444; margin-bottom: 18px; line-height: 1.8; }
+        .article-content ul { margin: 16px 0 16px 24px; }
+        .article-content li { font-size: 1.05rem; color: #444; margin-bottom: 10px; line-height: 1.7; }
+        .article-content hr { border: none; border-top: 1px solid #ddd; margin: 32px 0; }
+        .article-content a { color: #bd9280; text-decoration: none; }
+        .article-content a:hover { text-decoration: underline; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #bd9280; text-decoration: none; font-size: 0.95rem; }
+        .back-link:hover { text-decoration: underline; }
+        .author-box { background: #f5f3f0; padding: 24px; border-radius: 8px; margin: 32px 0; border-left: 4px solid #bd9280; }
+        .author-box p { margin-bottom: 0; font-size: 0.95rem; color: #555; }
+        footer { background: #2d3436; color: white; padding: 40px 0 20px; margin-top: 40px; }
+        .footer-bottom { text-align: center; color: rgba(255,255,255,0.5); font-size: 0.85rem; }
+        @media (max-width: 768px) { .hero h1 { font-size: 1.8rem; } nav { display: none; } }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <a href="../index.html" class="logo">Brian Demsey</a>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../index.html#articles">Articles</a>
+            <a href="../index.html#gallery">Gallery</a>
+            <a href="../index.html#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+<section class="hero">
+    <div class="container">
+        <h1>When the Algorithm Meets the Ocean</h1>
+        <p class="subtitle">What outrigger racing teaches us about software</p>
+        <p class="meta">Brian Demsey | 2025</p>
+    </div>
+</section>
+<article class="article-content">
+    <a href="../index.html#articles" class="back-link">&larr; Back to Articles</a>
+    <p>A meditation on why both paddling and programming require orchestrated Collective Intelligence-and preparation for waves that don't exist yet
+________________________________________
+By Brian Demsey, Founder of Hallucinations.Cloud
+
+Today, on this clear October 12th morning, as 115 outrigger canoe teams launch into the Ka'iwi Channel for the 73rd Molokai Hoe, I'm tracking their progress from my office in San Clemente. 
+
+The live feed shows Shell Va'a from Tahiti pulling ahead, their six paddlers moving as one organism across 41 miles of the unpredictable Pacific. Each drives their blade into the ocean 50 times per minute-12,000 perfectly synchronized strokes over four hours. One paddler off by a fraction of a second, and the rhythm collapses.
+
+I have competed in the Molokai Hoe. I'm not an Olympian, never trained at an elite paddling camp. But I've spent years building systems that work like these canoe crews-harnessing collective intelligence while preparing for disasters that haven't been invented yet. It's why my platform, Hallucinations.Cloud, survives in the volatile world of AI safety when technically superior solutions fail.
+
+The same principle that propels those canoes through the Ka'iwi Channel should guide how we build software: progress comes not from heroic individual effort, but from aligned effort. From distributed intelligence working in sync. From systems designed to absorb the unpredictable.
+
+The Mythology We Need to Abandon
+
+Silicon Valley loves its lone genius mythology-the visionary in a garage, the programmer who cracks the code overnight. Even today's "vibe coding" movement, where developers let AI generate entire applications while barely reviewing the output, perpetuates this fantasy of individual magic, just with artificial intelligence as the solo hero.
+
+But watch those Tahitian paddlers dominating today's race. Their lead comes not from one spectacular athlete but from what Hawaiians call "ho'okahi ka 'ilau like ana"-welding the paddles together. The stroker sets cadence. The engine room in seats three and four delivers power. The steersman reads currents and keeps true. Remove any role, and Shell Va'a becomes just six people fighting the ocean separately.
+
+The best software emerges the same way. Grace Hopper didn't invent COBOL alone-she orchestrated a team. Today's large language models aren't the product of singular brilliance but thousands of researchers, engineers, and annotators working in careful synchronization. Even my modest applications succeed not through my coding prowess but through orchestrating feedback from Reddit, Product Hunt, Stack Overflow, and countless beta testers who spot what I miss.
+
+Why Crowds Beat Algorithms (Until They Don't)
+
+James Surowiecki's "wisdom of crowds" explains part of this. Aggregate diverse perspectives, and you outperform experts. It's why open-source projects like TensorFlow eclipse proprietary alternatives. Why my user feedback loops catch edge cases no single developer would anticipate.
+
+But crowds have a fatal flaw: they excel at averages, not extremes. They can optimize for the 99% case while missing the 1% that kills you.
+
+This morning's race conditions illustrate perfectly. Teams train for typical Ka'iwi Channel patterns-northeast trade winds, predictable swells. The crowd wisdom of decades says to prepare for these known conditions. But the channel also produces what Nassim Taleb calls black swans: rogue waves from distant storms, sudden wind shifts, tiger sharks drawn by unusual currents. No amount of crowd data predicts these events. Only human judgment-the veteran steersman who feels something "off" in the water-saves the crew.
+
+Building for Black Swans You Can't Name
+
+This is why I built Hallucinations.Cloud differently than others. The AI safety field obsesses over known failure modes-bias, toxicity, factual errors. Important problems, but essentially crowd-solvable through data and testing.
+
+We focus on the unknown unknowns. When large language models generate confident but completely fabricated information, it's rarely in ways our training data predicted. Like that rogue wave in the Ka'iwi Channel, AI hallucinations emerge from complex interactions we didn't-couldn't-anticipate.
+
+Our platform doesn't just aggregate multiple models and user feedback. It maintains a variety of detection layers-systems watching for behavioral patterns that don't match any known category. Like an experienced steersman scanning for subtle water changes that precede disaster, we monitor the obvious as well as for weak signals that something unprecedented is forming.
+
+This approach saved us last month when a client's AI suddenly began inserting plausible-sounding but completely fictional regulatory requirements into legal documents. No existing safety system would catch this-the text was grammatically perfect, contextually appropriate, and matched no known failure pattern. But our detection layer noticed an anomaly in confidence distributions that didn't fit any profile. Human review confirmed the problem before any damage occurred.
+
+The Vibe Coding Delusion
+
+Which brings me to why the current "vibe coding" trend terrifies me. Andrej Karpathy, brilliant as he is, suggests we can "forget that the code even exists" and let AI handle everything. This is like putting someone who's never paddled in the steersman position and saying, "Don't worry about reading the water-just vibe with it."
+
+Today's Molokai Hoe has already seen two hulihuli (capsizes) from teams that lost rhythm in unexpected swells. That's what happens when you trust the pattern without understanding the system. In software, it manifests as catastrophic failures when edge cases hit-like when Daylight Saving Time crashes your booking system, or Hawaiian diacritical marks corrupt your database, or a regulatory change makes your AI-generated compliance code actively illegal.
+
+The teams leading today's race aren't the ones with the strongest individual paddlers or the best equipment. They're the ones who practiced capsize recovery, who rotate paddlers based on subtle fatigue signs, who read the water three waves ahead. They trust their training but never forget they're one rogue wave from swimming.
+Humans Aren't Bugs-They're the System
+
+As I watch the race tracker, Shell Va'a extends their lead. Not through raw power but through micro-adjustments-slightly shifting timing to match a current, rotating a tiring paddler before they break rhythm, reading wind patterns others miss. These aren't in any training manual. They emerge from human awareness integrated with systematic preparation.
+
+This is what we miss in our rush to automate everything. Humans don't just operate systems; we ARE the system's ability to transcend its programming. In Hallucinations.Cloud, each AI output failing our scoring system passes through to human review not as a quality check but as a reality check. Our reviewers don't just verify facts-they ask, "Does this feel off?" Often, that ineffable sense catches failures algorithms miss.
+
+We're entering an era where AI will write most code, deploy applications, even improve itself. But the systems that endure won't be the ones that eliminate human judgment. They'll be the ones that amplify it, that treat human intuition as a feature, not a bug.
+
+Stroke by Stroke, Line by Line
+
+The Molokai Hoe leaders are halfway to Oahu now, maintaining their impossible synchronization despite fatigue, changing conditions, and the relentless Pacific. Each stroke looks like the last, but each responds to subtle changes-a slight wind shift, a teammate's minor fatigue, a current's new angle.
+
+This is how resilient systems get built. Not through heroic sprints or magical AI, but stroke by stroke, line by line, with collective intelligence guided by human judgment. With architecture that assumes failure and responds gracefully. With teams that synchronize their strengths while preparing for disasters they can't name.
+
+The future doesn't belong to lone geniuses or to AI systems that generate code while we sleep. It belongs to those who understand that in both the Ka'iwi Channel and production software, wisdom emerges from the crowd, but survival depends on the human in seat six, hand on the steering paddle, reading the water for signs of a wave that shouldn't exist-until it does.
+
+As today's race concludes in Waikiki, the winners won't just be the strongest or the smartest. They'll be the ones who welded their paddles together while never forgetting that the ocean always has one more surprise. That's not just how you win the Molokai Hoe. It's how you build technology that survives the future's unpredictable waters.
+
+We're all in the channel now-paddler and programmer alike-stroke by stroke, line by line, preparing for the wave before it breaks.
+________________________________________
+Brian Demsey is the founder of Hallucinations.Cloud, a platform that combines collective intelligence with human judgment to detect and prevent AI hallucinations. He has completed in 3 Molokai Hoe outrigger races as a team member and 1 solo surfski race from Molokai to Oahu.</p>
+    <h2>Edited a month ago</h2>
+    <div class="author-box">
+        <p><strong>Brian Demsey</strong> is the founder and CEO of Hallucinations.cloud LLC, an AI safety company focused on multi-model truth verification. He has over fifty years of experience in enterprise technology.</p>
+    </div>
+</article>
+<footer>
+    <div class="container">
+        <div class="footer-bottom">
+            <p>&copy; 2026 Brian Demsey. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grains of Sand: Why We Need Tools for Truth | Brian Demsey</title>
+    <meta name="description" content="We are building tools for finding truth. In a world where information moves at the speed of light and verification takes patience, how do ordinary people find reliable ground?">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Georgia', 'Times New Roman', serif; line-height: 1.7; color: #2c2c2c; background: #faf9f7; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+        header {
+            background: rgba(45, 52, 54, 0.95);
+            padding: 16px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        header .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { color: #fff; font-size: 1.4rem; font-weight: 600; text-decoration: none; }
+        nav { display: flex; gap: 32px; }
+        nav a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 0.95rem; }
+        nav a:hover { color: #fff; }
+
+        .hero {
+            background: linear-gradient(135deg, rgba(70, 130, 180, 0.4), rgba(45, 80, 120, 0.5)),
+                        url('../assets/beach-father-child.jpg') center/cover no-repeat;
+            color: white;
+            padding: 120px 24px 60px;
+            text-align: center;
+        }
+        .hero h1 { font-size: 2.4rem; font-weight: 400; margin-bottom: 16px; max-width: 900px; margin-left: auto; margin-right: auto; }
+        .hero .subtitle { font-size: 1.1rem; opacity: 0.9; max-width: 700px; margin: 0 auto; font-style: italic; }
+        .hero .meta { margin-top: 20px; font-size: 0.9rem; opacity: 0.7; }
+
+        .article-content { max-width: 800px; margin: 0 auto; padding: 40px 24px; }
+        .article-content h2 { font-size: 1.6rem; margin-top: 40px; margin-bottom: 16px; color: #2d3436; }
+        .article-content p { font-size: 1.05rem; color: #444; margin-bottom: 18px; line-height: 1.8; }
+        .article-content hr { border: none; border-top: 1px solid #ddd; margin: 32px 0; }
+        .article-content a { color: #bd9280; text-decoration: none; }
+        .article-content a:hover { text-decoration: underline; }
+
+        .back-link { display: inline-block; margin-bottom: 20px; color: #bd9280; text-decoration: none; font-size: 0.95rem; }
+        .back-link:hover { text-decoration: underline; }
+
+        .author-box {
+            background: #f5f3f0;
+            padding: 24px;
+            border-radius: 8px;
+            margin: 32px 0;
+            border-left: 4px solid #bd9280;
+        }
+        .author-box p { margin-bottom: 0; font-size: 0.95rem; color: #555; }
+
+        .publication-note {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 24px;
+        }
+
+        footer { background: #2d3436; color: white; padding: 40px 0 20px; margin-top: 40px; }
+        .footer-bottom { text-align: center; color: rgba(255,255,255,0.5); font-size: 0.85rem; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 1.8rem; }
+            nav { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <a href="../index.html" class="logo">Brian Demsey</a>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../index.html#articles">Articles</a>
+            <a href="../index.html#gallery">Gallery</a>
+            <a href="../index.html#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <h1>Grains of Sand: Why We Need Tools for Truth</h1>
+        <p class="subtitle">Building navigation instruments for an ocean of information</p>
+        <p class="meta">Brian Demsey | Published in The Information | January 2026</p>
+    </div>
+</section>
+
+<article class="article-content">
+    <a href="../index.html#articles" class="back-link">&larr; Back to Articles</a>
+
+    <p class="publication-note">As published in The Information</p>
+
+    <p>I started the new year sitting on the sand at Dana Point, California, watching waves arrive from storms that occurred a week ago, seven thousand miles away. A grain of sand might take years—or millennia—to drift across that expanse. The ocean has all the time in the world.</p>
+
+    <p>Then my phone buzzed with news from Switzerland. At Le Constellation bar in Crans-Montana, a New Year's celebration had become deadly. A flashover—all combustible material in a room igniting almost simultaneously—killed approximately forty people and severely injured over a hundred more. The suspected cause: sparklers in champagne bottles touching a wooden ceiling.</p>
+
+    <p>The information reached me faster than the next wave reached my feet.</p>
+
+    <p>This asymmetry—the speed of harm versus the patience required to build anything protective—is why I founded Hallucinations.cloud. But I want to reframe what we're building, because the name itself may mislead.</p>
+
+    <hr>
+
+    <h2>Not Detection—Navigation</h2>
+
+    <p>We are not primarily in the business of catching AI systems making mistakes. We are building tools for finding truth.</p>
+
+    <p>The distinction matters. "Hallucination detection" frames the problem as adversarial—us versus the machines. But the real problem is navigational. In a world where information moves at the speed of light and verification takes patience, how do ordinary people—not just AI researchers, not just the technically literate—find reliable ground to stand on?</p>
+
+    <p>Consider a grain of sand floating on random currents across the Pacific. It has no agency. It arrives when geology permits—if ever. Now consider a navigator with instruments: charts, compass, the ability to triangulate position from multiple reference points. Same ocean, radically different outcomes.</p>
+
+    <p>Our multi-model platform queries eight different AI systems simultaneously. When they converge, confidence rises. When they diverge, that divergence itself is information—a signal that this territory requires caution, further investigation, human judgment.</p>
+
+    <hr>
+
+    <h2>The Morning of December 30, 2024</h2>
+
+    <p>Exactly one year before I sat on that beach, I was driving to my granddaughter's wedding through a mountain pass. A tire rolled loose from another vehicle. Physics took over. My car came to rest precariously, thirty miles from the nearest town.</p>
+
+    <p>OnStar immediately came to life, assuring me help was dispatched. My phone called emergency contacts and explained the situation before panic could set in. Systems designed to anticipate catastrophe responded before I could process what had happened.</p>
+
+    <p>I survived to see that granddaughter's wedding. One year later, almost to the day, she gave birth to my great-grandchild—the fourth generation.</p>
+
+    <p>The difference between my story and those forty people in Switzerland is infrastructure. Systems that catch you. The difference between a car engineered with sensors and emergency response, and a bar where celebration became catastrophe in the time it takes to draw a breath.</p>
+
+    <hr>
+
+    <h2>What Path Is Safe?</h2>
+
+    <p>The questions we should be asking about AI aren't just "is this output accurate?" but "what path is safe?" Not just "did this model hallucinate?" but "what venue is adequately safeguarding your visit?"</p>
+
+    <p>We are all grains of sand. The question is whether we expect to survive floating along a random route, or whether we wish to be armed—and yes, it's the right word—with tools to arrive at our destination.</p>
+
+    <p>Medicine will one day work similarly. Financial advice. Legal guidance. Educational content. Every domain where information quality determines outcomes will need triangulation tools—ways for ordinary people to check whether the confident answer they just received aligns with reality across multiple independent sources.</p>
+
+    <hr>
+
+    <h2>Fifty Years of Building Systems</h2>
+
+    <p>I wrote my first lines of Fortran in the early 1960s. I've built pension systems for Fortune 100 companies, founded companies, sold companies, and watched the entire arc of computing from punch cards to large language models.</p>
+
+    <p>What I've learned is this: technology that catches people before they fall requires the same patient engineering as the ocean requires to move a grain of sand across seven thousand miles. It doesn't happen by accident. It happens because someone decided that human welfare was worth the unglamorous work of building infrastructure.</p>
+
+    <p>I have a few waves of life remaining. I'm spending them building something that might help others navigate their own crossings—the young person checking whether information is reliable before making a consequential decision, the family verifying medical advice, the investor distinguishing signal from noise.</p>
+
+    <hr>
+
+    <h2>Don't Lament. Engage.</h2>
+
+    <p>This is my philosophy, and it's never been more urgent. Lamenting the speed of misinformation accomplishes nothing. Wringing hands over AI hallucinations changes nothing. Building tools that give everyone—not just experts—the ability to triangulate toward truth? That's engagement.</p>
+
+    <p>The news from Switzerland reached me before I finished my morning coffee. Forty families began their years in grief. The information traveled at the speed of light. The healing will take generations.</p>
+
+    <p>But somewhere between the speed of harm and the slowness of healing, there's room for tools that help people navigate. Not perfect protection—that doesn't exist. But instruments. Charts. Ways to triangulate.</p>
+
+    <p><strong>The ocean has all the time in the world.</strong></p>
+
+    <div class="author-box">
+        <p><strong>Brian Demsey</strong> is the founder and CEO of Hallucinations.cloud LLC, an AI safety company focused on multi-model truth verification. He has over fifty years of experience in enterprise technology, including building unified benefits platforms for Fortune 100 companies.</p>
+    </div>
+
+</article>
+
+<footer>
+    <div class="container">
+        <div class="footer-bottom">
+            <p>&copy; 2026 Brian Demsey. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERPs Face AI: The Coming Disruption | Brian Demsey</title>
+    <meta name="description" content="OpenAI is hiring hundreds of consultants to crack enterprise sales. The ERP giants should be worried. Here's why multi-model verification could reshape enterprise software.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Georgia', 'Times New Roman', serif; line-height: 1.7; color: #2c2c2c; background: #faf9f7; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+        header {
+            background: rgba(45, 52, 54, 0.95);
+            padding: 16px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        header .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { color: #fff; font-size: 1.4rem; font-weight: 600; text-decoration: none; }
+        nav { display: flex; gap: 32px; }
+        nav a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 0.95rem; }
+        nav a:hover { color: #fff; }
+
+        .hero {
+            background: linear-gradient(135deg, rgba(45, 52, 54, 0.85), rgba(99, 110, 114, 0.8)),
+                        url('../assets/gallery-2.jpg') center/cover no-repeat;
+            color: white;
+            padding: 120px 24px 60px;
+            text-align: center;
+        }
+        .hero h1 { font-size: 2.4rem; font-weight: 400; margin-bottom: 16px; max-width: 900px; margin-left: auto; margin-right: auto; }
+        .hero .subtitle { font-size: 1.1rem; opacity: 0.9; max-width: 700px; margin: 0 auto; font-style: italic; }
+        .hero .meta { margin-top: 20px; font-size: 0.9rem; opacity: 0.7; }
+
+        .article-content { max-width: 800px; margin: 0 auto; padding: 40px 24px; }
+        .article-content h2 { font-size: 1.6rem; margin-top: 40px; margin-bottom: 16px; color: #2d3436; }
+        .article-content p { font-size: 1.05rem; color: #444; margin-bottom: 18px; line-height: 1.8; }
+        .article-content ul { margin: 16px 0 16px 24px; }
+        .article-content li { font-size: 1.05rem; color: #444; margin-bottom: 10px; line-height: 1.7; }
+        .article-content hr { border: none; border-top: 1px solid #ddd; margin: 32px 0; }
+        .article-content a { color: #bd9280; text-decoration: none; }
+        .article-content a:hover { text-decoration: underline; }
+
+        .back-link { display: inline-block; margin-bottom: 20px; color: #bd9280; text-decoration: none; font-size: 0.95rem; }
+        .back-link:hover { text-decoration: underline; }
+
+        .author-box {
+            background: #f5f3f0;
+            padding: 24px;
+            border-radius: 8px;
+            margin: 32px 0;
+            border-left: 4px solid #bd9280;
+        }
+        .author-box p { margin-bottom: 0; font-size: 0.95rem; color: #555; }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+        }
+        .comparison-table th, .comparison-table td {
+            padding: 12px 16px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        .comparison-table th {
+            background: #f5f3f0;
+            font-weight: 600;
+        }
+
+        footer { background: #2d3436; color: white; padding: 40px 0 20px; margin-top: 40px; }
+        .footer-bottom { text-align: center; color: rgba(255,255,255,0.5); font-size: 0.85rem; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 1.8rem; }
+            nav { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <a href="../index.html" class="logo">Brian Demsey</a>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../index.html#articles">Articles</a>
+            <a href="../index.html#gallery">Gallery</a>
+            <a href="../index.html#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <h1>ERPs Face AI: The Coming Disruption</h1>
+        <p class="subtitle">Why OpenAI's enterprise push should worry SAP and Oracle</p>
+        <p class="meta">Brian Demsey | February 2026 | 8 min read</p>
+    </div>
+</section>
+
+<article class="article-content">
+    <a href="../index.html#articles" class="back-link">&larr; Back to Articles</a>
+
+    <p>OpenAI is hiring hundreds of AI consultants to boost enterprise sales. That headline caught my attention because it confirms what I've suspected for months: the ERP giants—SAP, Oracle, Microsoft—are about to face the same disruption they once inflicted on mainframe vendors.</p>
+
+    <p>The question I've been asking myself: Can the multi-model verification architecture I built for detecting AI hallucinations be applied to enterprise software?</p>
+
+    <p>The answer is yes. And the implications are significant.</p>
+
+    <hr>
+
+    <h2>The Current ERP Landscape</h2>
+
+    <p>Enterprise Resource Planning systems are the integrated software platforms that organizations use to manage core business processes: finance, HR, supply chain, manufacturing, and customer relationships.</p>
+
+    <p>The major vendors include:</p>
+
+    <ul>
+        <li><strong>SAP</strong> — The largest ERP provider globally, dominant in large enterprises</li>
+        <li><strong>Oracle</strong> — Strong in financials and cloud ERP (Oracle Fusion, NetSuite)</li>
+        <li><strong>Microsoft Dynamics 365</strong> — Popular in mid-market, integrates with Microsoft ecosystem</li>
+        <li><strong>Workday</strong> — Leading in HR and financial management, cloud-native</li>
+        <li><strong>Infor</strong> — Industry-specific solutions for manufacturing, healthcare, hospitality</li>
+    </ul>
+
+    <p>But the real disruptive threat isn't coming from within this ecosystem. It's coming from best-of-breed point solutions combined with AI integration platforms—companies assembling Salesforce (CRM) + Workday (HR) + Coupa (procurement) + Anaplan (planning) rather than buying monolithic suites.</p>
+
+    <hr>
+
+    <h2>The H-LLM Parallel</h2>
+
+    <p>At Hallucinations.cloud, I built a platform that queries eight different AI models simultaneously. When they converge, confidence rises. When they diverge, that divergence signals unreliability.</p>
+
+    <p>The same architecture could work for enterprise data:</p>
+
+    <table class="comparison-table">
+        <tr>
+            <th>H-LLM Approach</th>
+            <th>ERP Aggregation Approach</th>
+        </tr>
+        <tr>
+            <td>Query 8 LLMs simultaneously</td>
+            <td>Query multiple best-of-breed systems</td>
+        </tr>
+        <tr>
+            <td>Detect hallucinations via consensus</td>
+            <td>Detect data inconsistencies across systems</td>
+        </tr>
+        <tr>
+            <td>H-Score for reliability</td>
+            <td>Unified trust/accuracy score for business data</td>
+        </tr>
+        <tr>
+            <td>Single interface, multiple models</td>
+            <td>Single interface, multiple ERPs</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>The "ERP of Tomorrow" Thesis</h2>
+
+    <p>Instead of forcing enterprises to rip-and-replace legacy systems, you could create an orchestration layer that:</p>
+
+    <ul>
+        <li><strong>Aggregates data</strong> from Workday (HR) + NetSuite (finance) + Salesforce (CRM) + SAP (supply chain) + whatever else they're running</li>
+        <li><strong>Normalizes</strong> conflicting data formats and definitions</li>
+        <li><strong>Validates</strong> through cross-system verification—does the headcount in HR match payroll in finance?</li>
+        <li><strong>Surfaces discrepancies</strong> and "hallucinations" in business data</li>
+        <li><strong>Provides a unified command interface</strong></li>
+    </ul>
+
+    <hr>
+
+    <h2>Why This Could Work Now</h2>
+
+    <p><strong>API maturity.</strong> Most modern ERPs expose robust APIs. The integration problem that seemed insurmountable a decade ago is now merely expensive.</p>
+
+    <p><strong>AI reasoning.</strong> LLMs can interpret and translate between systems in ways that traditional ETL tools cannot.</p>
+
+    <p><strong>Integration fatigue.</strong> Enterprises spend millions on Boomi, MuleSoft, and Workato just to connect systems. They're exhausted.</p>
+
+    <p><strong>My credibility.</strong> I built unified benefits platforms for Fortune 100 companies at RemoteNet. I understand enterprise procurement psychology. I've been through this before.</p>
+
+    <hr>
+
+    <h2>The Finance Consensus Layer</h2>
+
+    <p>A practical first step would be a "Finance Consensus Layer"—a single pane that queries multiple financial systems simultaneously, detects discrepancies, and provides a reliability score.</p>
+
+    <p>Imagine the output:</p>
+
+    <pre style="background: #f5f3f0; padding: 16px; border-radius: 8px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;">
+CASH POSITION CONSENSUS
+-----------------------
+QuickBooks: $847,293.41
+NetSuite:   $851,102.00
+Discrepancy: $3,808.59 (0.45%)
+
+F-Score: 94/100
+
+ALERT: 3 unreconciled transactions detected
+- QB Transaction #4471 ($2,340) - No NetSuite match
+- NS Journal Entry #8892 ($1,468.59) - No QB match
+    </pre>
+
+    <p>The target customers are obvious: post-acquisition companies drowning in inherited systems, private equity portfolio roll-ups, growing companies that outgrew QuickBooks but are running parallel during migration, and fractional CFOs managing multiple client systems.</p>
+
+    <hr>
+
+    <h2>The Bigger Picture</h2>
+
+    <p>I saw this coming before the hype cycle peaked. Long before OpenAI started hiring enterprise consultants, I recognized that large language models would erode the market dominance of ERP software behemoths.</p>
+
+    <p>The same pattern I've observed in AI—where no single model can be trusted and verification requires triangulation across multiple sources—applies to enterprise data.</p>
+
+    <p>SAP and Oracle built empires on the promise of a "single source of truth." But the truth is messier. Companies run multiple systems. Data conflicts. Nobody knows which number is right.</p>
+
+    <p>The opportunity isn't to replace SAP and Oracle. It's to sit above them—an orchestration and verification layer that treats enterprise systems the way my H-LLM platform treats language models.</p>
+
+    <p>I checked my savings account this morning. I'm still a few zeros short of going head-to-head with Sam Altman.</p>
+
+    <p>But the architecture is proven. The market need is real. And I've done this before.</p>
+
+    <p><strong>Don't lament. Engage.</strong></p>
+
+    <div class="author-box">
+        <p><strong>Brian Demsey</strong> is the founder and CEO of Hallucinations.cloud LLC. He previously founded RemoteNet Corporation, building unified benefits platforms for Fortune 100 companies. He can be reached at brian@hallucinations.cloud.</p>
+    </div>
+
+</article>
+
+<footer>
+    <div class="container">
+        <div class="footer-bottom">
+            <p>&copy; 2026 Brian Demsey. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
