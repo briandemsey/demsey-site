@@ -213,13 +213,29 @@
             margin-bottom: 40px;
         }
         .gallery-carousel {
-            max-width: 800px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            max-width: 1200px;
             margin: 0 auto;
-            text-align: center;
         }
         .gallery-carousel img {
-            max-width: 100%;
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
             box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .gallery-carousel img:hover {
+            transform: scale(1.03);
+        }
+        @media (max-width: 900px) {
+            .gallery-carousel { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 500px) {
+            .gallery-carousel { grid-template-columns: 1fr; }
         }
         .gallery-placeholder {
             background: #f0ebe6;
@@ -550,6 +566,23 @@
         <h2>A glimpse into my world: The photo gallery of Brian Demsey</h2>
         <div class="gallery-carousel">
             <img src="assets/gallery-1.png" alt="Beckman Laser Institute Newsletter - Brian Demsey elected Chairman of the Board, Summer 1997">
+            <img src="assets/gallery-5.jpg" alt="Confidence Isn't Truth - AI reflection">
+            <img src="assets/gallery-6.jpg" alt="Gallery image">
+            <img src="assets/gallery-7.jpg" alt="Gallery image">
+            <img src="assets/gallery-8.jpg" alt="Gallery image">
+            <img src="assets/gallery-9.jpg" alt="Gallery image">
+            <img src="assets/gallery-10.jpg" alt="Gallery image">
+            <img src="assets/gallery-11.jpg" alt="Gallery image">
+            <img src="assets/gallery-12.jpg" alt="Gallery image">
+            <img src="assets/gallery-13.jpg" alt="Gallery image">
+            <img src="assets/gallery-14.jpg" alt="Gallery image">
+            <img src="assets/gallery-15.jpg" alt="Gallery image">
+            <img src="assets/gallery-16.jpg" alt="Gallery image">
+            <img src="assets/gallery-17.jpg" alt="Gallery image">
+            <img src="assets/gallery-18.jpg" alt="Gallery image">
+            <img src="assets/gallery-19.jpg" alt="Gallery image">
+            <img src="assets/gallery-20.jpg" alt="Gallery image">
+            <img src="assets/gallery-21.jpg" alt="Gallery image">
         </div>
     </div>
 </section>
