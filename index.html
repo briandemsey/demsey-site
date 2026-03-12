@@ -621,10 +621,12 @@
             <div class="contact-form">
                 <p><strong>Questions or Comments</strong></p>
                 <p style="margin-bottom: 20px; color: #666;">Send me a message or ask me a question using this form. I will do my best to get back to you soon!</p>
-                <form action="https://formspree.io/f/bdemsey@demsey.com" method="POST">
+                <form action="https://formsubmit.co/bdemsey@demsey.com" method="POST">
                     <input type="text" name="name" placeholder="Name" required>
-                    <input type="email" name="_replyto" placeholder="Email" required>
+                    <input type="email" name="email" placeholder="Email" required>
                     <input type="hidden" name="_subject" value="Contact from demsey.com">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://demsey.com/index.html#contact">
                     <textarea name="message" placeholder="Message" required></textarea>
                     <button type="submit">Send</button>
                 </form>
