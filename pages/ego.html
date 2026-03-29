@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ego | Brian Demsey</title>
+    <meta name="description" content="Resume and professional background of Brian R. Demsey - Serial entrepreneur, AI safety pioneer, and 50+ years of enterprise technology experience.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Georgia', 'Times New Roman', serif; line-height: 1.7; color: #2c2c2c; background: #faf9f7; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+        header {
+            background: rgba(45, 52, 54, 0.95);
+            padding: 16px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        header .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { color: #fff; font-size: 1.4rem; font-weight: 600; text-decoration: none; }
+        nav { display: flex; gap: 32px; }
+        nav a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 0.95rem; }
+        nav a:hover { color: #fff; }
+
+        .hero {
+            background: linear-gradient(135deg, rgba(27, 58, 92, 0.92), rgba(45, 52, 54, 0.88)),
+                        url('../assets/park-bench.jpg') center/cover no-repeat;
+            color: white;
+            padding: 140px 24px 80px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 300;
+            margin-bottom: 16px;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+        }
+        .hero .tagline {
+            font-size: 1rem;
+            opacity: 0.8;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+            font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+        }
+        .hero .contact-line {
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+        .hero .contact-line a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .hero .contact-line a:hover {
+            text-decoration: underline;
+        }
+
+        .resume-content { max-width: 900px; margin: 0 auto; padding: 50px 24px; }
+
+        .back-link { display: inline-block; margin-bottom: 30px; color: #bd9280; text-decoration: none; font-size: 0.95rem; }
+        .back-link:hover { text-decoration: underline; }
+
+        .section { margin-bottom: 50px; }
+        .section-title {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #1b3a5c;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #2e75b6;
+            font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+        }
+
+        .summary-text {
+            font-size: 1.1rem;
+            color: #333;
+            line-height: 1.9;
+        }
+
+        .job {
+            margin-bottom: 35px;
+        }
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            margin-bottom: 12px;
+        }
+        .job-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #333;
+        }
+        .job-company {
+            color: #666;
+            font-size: 1rem;
+        }
+        .job-dates {
+            font-size: 0.9rem;
+            color: #888;
+            font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+        }
+        .job ul {
+            margin: 0 0 0 20px;
+            padding: 0;
+        }
+        .job li {
+            font-size: 1rem;
+            color: #444;
+            margin-bottom: 8px;
+            line-height: 1.7;
+        }
+
+        .board-item {
+            margin-bottom: 20px;
+        }
+        .board-item h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 6px;
+        }
+        .board-item p {
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.7;
+        }
+
+        .publication-list li {
+            font-size: 1rem;
+            color: #444;
+            margin-bottom: 10px;
+            line-height: 1.7;
+        }
+
+        .athletics-list li {
+            font-size: 1rem;
+            color: #444;
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+
+        .quote-box {
+            background: #1b3a5c;
+            color: #fff;
+            padding: 40px;
+            text-align: center;
+            margin: 50px 0;
+        }
+        .quote-box p {
+            font-size: 1.6rem;
+            font-style: italic;
+            font-weight: 300;
+        }
+
+        footer { background: #2d3436; color: white; padding: 40px 0 20px; margin-top: 40px; }
+        .footer-bottom { text-align: center; color: rgba(255,255,255,0.5); font-size: 0.85rem; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; letter-spacing: 4px; }
+            .job-header { flex-direction: column; }
+            nav { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <a href="../index.html" class="logo">Brian Demsey</a>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../index.html#articles">Articles</a>
+            <a href="../index.html#gallery">Gallery</a>
+            <a href="../index.html#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <h1>Brian R. Demsey</h1>
+        <p class="tagline">Founder & CEO | AI Safety | Enterprise Technology | Actuarial Science</p>
+        <p class="contact-line">
+            Capistrano Beach, CA / Spearfish, SD &nbsp;|&nbsp;
+            <a href="https://hallucinations.cloud">hallucinations.cloud</a> &nbsp;|&nbsp;
+            <a href="https://linkedin.com/in/briandemsey">LinkedIn</a> &nbsp;|&nbsp;
+            <a href="https://demsey.com">demsey.com</a>
+        </p>
+    </div>
+</section>
+
+<article class="resume-content">
+    <a href="../index.html" class="back-link">&larr; Back to Home</a>
+
+    <div class="section">
+        <h2 class="section-title">Executive Summary</h2>
+        <p class="summary-text">Serial entrepreneur and technology executive with 50+ years of experience spanning actuarial science, enterprise IT infrastructure, public education governance, and AI safety. Founded and led multiple companies serving Fortune 100 and public-sector clients. Co-founded the Beckman Laser Institute and Medical Clinic at UC Irvine, now a world-leading center for pediatric laser treatment. Currently building Hallucinations.cloud, an AI safety platform that simultaneously queries eight large language models for cross-validation, misinformation detection, and reliability scoring. Lifelong commitment to community service across healthcare, education, and family safety.</p>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Professional Experience</h2>
+
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <span class="job-title">Founder & Chief Executive Officer</span>
+                    <span class="job-company"> | Hallucinations.cloud LLC / H-EDU.Solutions</span>
+                </div>
+                <span class="job-dates">2023 – Present</span>
+            </div>
+            <ul>
+                <li>Designed and deployed H-LLM, a multi-model AI verification platform that queries eight LLMs simultaneously (GPT-4o, Claude, Gemini, Grok, Cohere, DeepSeek, OpenRouter, Perplexity) to detect hallucinations and model divergence in real time.</li>
+                <li>Developed the proprietary H-Score algorithm providing reliability scoring and confidence metrics for AI-generated content across legal, financial, and healthcare domains.</li>
+                <li>Built VERA (Verification Engine for Results & Accountability), an MCP-based LCAP intervention verification system for K–12 education, now deployed for California and New South Wales, Australia.</li>
+                <li>Created Circle5, a family safety platform using Expo/React Native and Supabase Realtime, with Advanced partner status from Check Point Software for enterprise-grade security integration.</li>
+                <li>Launched H-LLM on the Apple App Store with Stripe subscription processing and Twilio SMS authentication.</li>
+                <li>Developing LiminalMark, a distributed watermarking technology for AI-generated content using Reed-Solomon error correction (patent pending).</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <span class="job-title">Founder & Managing Partner</span>
+                    <span class="job-company"> | Demsey, Filliger & Associates</span>
+                </div>
+                <span class="job-dates">2001 – 2023</span>
+            </div>
+            <ul>
+                <li>Founded and led an actuarial consulting firm serving CSBA and 400+ California public-sector entities in pension, OPEB, and GASB compliance.</li>
+                <li>Firm acquired by Foster & Foster Consulting Actuaries (2023–24), with programs continuing under the acquiring firm.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <span class="job-title">West Region Managing Partner</span>
+                    <span class="job-company"> | Ernst & Young (Actuarial, Benefits & Compensation)</span>
+                </div>
+                <span class="job-dates">1980s – 2000s</span>
+            </div>
+            <ul>
+                <li>Led the West Region practice for actuarial, benefits, and compensation consulting at one of the Big Four professional services firms.</li>
+                <li>Designed and implemented CSBA's GASB 45 actuarial compliance program, which continues in operation today through Foster & Foster.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <span class="job-title">Founder & CEO</span>
+                    <span class="job-company"> | RemoteNet Corporation</span>
+                </div>
+                <span class="job-dates">1990s</span>
+            </div>
+            <ul>
+                <li>Built a unified enterprise portal serving Northrop Grumman's 100,000 employees for benefits administration and IT infrastructure.</li>
+                <li>Grew Northrop Grumman into a major client generating more than $1 million in annual revenue for RemoteNet.</li>
+                <li>Designed scalable enterprise systems for employee benefits administration, risk management, and data processing.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <span class="job-title">Founder & President</span>
+                    <span class="job-company"> | Brian R. Demsey & Associates</span>
+                </div>
+                <span class="job-dates">1970s – 1980s</span>
+            </div>
+            <ul>
+                <li>Established an actuarial consulting practice serving municipalities, pension funds, and enterprise clients. Firm later merged with Towers Perrin.</li>
+                <li>Pioneered early database and computing solutions, programming in Fortran beginning in the early 1960s and transitioning through successive technology eras.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Board Service & Community Leadership</h2>
+
+        <div class="board-item">
+            <h4>Co-Founder, Beckman Laser Institute and Medical Clinic, University of California, Irvine</h4>
+            <p>Structured the circular $5 million funding mechanism (UCI land + Beckman Foundation cash) that established the Institute. Led national fundraising efforts raising the equivalent of $34 million in today's dollars. Served on the board alongside Arnold Beckman (Beckman Instruments) and David Packard (Hewlett-Packard). The Institute is now a world leader in pediatric laser treatment, home to the Vascular Birthmarks & Malformations Diagnostic and Treatment Center, which treats port-wine stains, hemangiomas, and other vascular conditions in infants and children using technologies developed on site.</p>
+        </div>
+
+        <div class="board-item">
+            <h4>Member, Board of Trustees, Capistrano Unified School District</h4>
+            <p>Elected 1990. Contributed to governance and strategic planning for one of Southern California's largest public school systems.</p>
+        </div>
+
+        <div class="board-item">
+            <h4>Member, Board of Directors, Children's Hospital of Mission Viejo</h4>
+            <p>Served on the governing board supporting pediatric healthcare services in South Orange County.</p>
+        </div>
+
+        <div class="board-item">
+            <h4>Creator, Circle5</h4>
+            <p>Family safety platform designed to protect family members from harm through real-time alerts, secure communication, and enterprise-grade cybersecurity integration.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Publications & Thought Leadership</h2>
+        <ul class="publication-list">
+            <li>Contributing author to The Information with 30+ articles covering AI reliability, hallucination detection, model cross-validation, geopolitics, and civilizational themes.</li>
+            <li>Maintains a personal article archive at demsey.com documenting five decades of enterprise technology, travel, and cultural observation.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Endurance Athletics</h2>
+        <ul class="athletics-list">
+            <li>22 completed marathons across the United States.</li>
+            <li>Solo ocean channel crossings: Catalina to Dana Point (39 miles) and Molokai Channel, Hawaii.</li>
+            <li>Competitive dragon boat racing including Yangtze River crossing.</li>
+            <li>40-year surf ski paddling career, originating at Bondi Beach, Australia (since 1984).</li>
+        </ul>
+    </div>
+
+    <div class="quote-box">
+        <p>"Don't lament. Engage."</p>
+    </div>
+
+</article>
+
+<footer>
+    <div class="container">
+        <div class="footer-bottom">
+            <p>&copy; 2026 Brian Demsey. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
