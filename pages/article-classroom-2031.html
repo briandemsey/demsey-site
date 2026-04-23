@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Classroom of 2031 | Brian Demsey</title>
+    <meta name="description" content="Why AI Will Not Dissolve the School — and What It Will Actually Do. The window is five years. The design decisions are being made now.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Georgia', 'Times New Roman', serif; line-height: 1.7; color: #2c2c2c; background: #faf9f7; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        header { background: rgba(45, 52, 54, 0.95); padding: 16px 0; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        header .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { color: #fff; font-size: 1.4rem; font-weight: 600; text-decoration: none; }
+        nav { display: flex; gap: 32px; }
+        nav a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 0.95rem; }
+        nav a:hover { color: #fff; }
+        .hero { background: linear-gradient(135deg, rgba(27, 42, 74, 0.6), rgba(22, 34, 56, 0.7)), url('../assets/children-hero.jpg') center/cover no-repeat; background-color: #1B2A4A; color: white; padding: 120px 24px 60px; text-align: center; }
+        .hero h1 { font-size: 2.4rem; font-weight: 400; margin-bottom: 16px; max-width: 900px; margin-left: auto; margin-right: auto; }
+        .hero .subtitle { font-size: 1.1rem; opacity: 0.95; max-width: 700px; margin: 0 auto; font-style: italic; }
+        .hero .meta { margin-top: 20px; font-size: 0.9rem; opacity: 0.7; }
+        .article-content { max-width: 800px; margin: 0 auto; padding: 40px 24px; }
+        .article-content h2 { font-size: 1.6rem; margin-top: 40px; margin-bottom: 16px; color: #2d3436; }
+        .article-content h3 { font-size: 1.3rem; margin-top: 32px; margin-bottom: 12px; color: #3d4a47; }
+        .article-content p { font-size: 1.05rem; color: #444; margin-bottom: 18px; line-height: 1.8; text-align: justify; }
+        .article-content ul, .article-content ol { margin: 16px 0 16px 24px; }
+        .article-content li { font-size: 1.05rem; color: #444; margin-bottom: 10px; line-height: 1.7; }
+        .article-content hr { border: none; border-top: 1px solid #ddd; margin: 32px 0; }
+        .article-content a { color: #4a7c6f; text-decoration: none; }
+        .article-content a:hover { text-decoration: underline; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #4a7c6f; text-decoration: none; font-size: 0.95rem; }
+        .back-link:hover { text-decoration: underline; }
+        .author-box { background: #f5f3f0; padding: 24px; border-radius: 8px; margin: 32px 0; border-left: 4px solid #1B2A4A; }
+        .author-box p { margin-bottom: 0; font-size: 0.95rem; color: #555; }
+        .pull-quote { font-size: 1.4rem; font-style: italic; color: #1B2A4A; text-align: center; margin: 32px 0; padding: 24px; border-top: 2px solid #B8902A; border-bottom: 2px solid #B8902A; }
+        .section-break { text-align: center; margin: 28px 0; font-size: 1.2rem; color: #888; }
+        footer { background: #2d3436; color: white; padding: 40px 0 20px; margin-top: 40px; }
+        .footer-bottom { text-align: center; color: rgba(255,255,255,0.5); font-size: 0.85rem; }
+        @media (max-width: 768px) { .hero h1 { font-size: 1.8rem; } nav { display: none; } }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <a href="../index.html" class="logo">Brian Demsey</a>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../index.html#articles">Articles</a>
+            <a href="../index.html#gallery">Gallery</a>
+            <a href="../index.html#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+<section class="hero">
+    <div class="container">
+        <h1>The Classroom of 2031</h1>
+        <p class="subtitle">Why AI Will Not Dissolve the School — and What It Will Actually Do</p>
+        <p class="meta">Brian Demsey | April 2026</p>
+    </div>
+</section>
+<article class="article-content">
+    <a href="../index.html#articles" class="back-link">&larr; Back to Articles</a>
+
+    <p>The national conversation about AI and education has split into two camps. One side believes AI will dissolve the school — children learning at home with personal tutors, buildings emptying, teachers made redundant. The other side believes AI will be the next smartboard: oversold, underused, and quietly abandoned in five years. Both are wrong. What AI is actually about to do to schools is stranger, more consequential, and almost entirely unprepared for.</p>
+
+    <p>I am not an educator. I am an actuary by training, a builder of enterprise measurement systems by trade, a former school board trustee, and at 83, a great-grandfather who has watched four generations of American children pass through the institution we call school. For twenty years I built the actuarial infrastructure that tells California's public agencies what their retiree-benefit obligations actually are, under the regime known as GASB 45. That work is the reason I can write this essay. The question of what AI does to education is, at bottom, a question of measurement and accountability — and I have spent a career doing that work for California's distributed public sector. What follows is what I see, translated from an actuary's frame into the frame of the debate the country is actually having.</p>
+
+    <p>The achievement gap in American public education has not moved in twenty years. Not in California, not in any peer state, not at the national level. This is not a failure of effort or funding; California now spends between $18,000 and $24,000 per pupil, higher than the national average and most peers. It is a failure of problem definition. The field has been unable to close the gap because the field has been unable to agree on what the gap actually is. AI is the first technology in history with the capacity to force that agreement. It will do so by making the mismatch between what schools measure and what children actually need impossible to keep ignoring.</p>
+
+    <p>This essay is an attempt to name that mismatch clearly and to describe what schools will look like in 2031 if the design decisions are made deliberately rather than forced chaotically. The window is five years. The design decisions are being made now, mostly badly, by vendors and foundations and ideological factions whose incentives are not aligned with the institution's actual purpose. Someone with institutional memory needs to speak.</p>
+
+    <h2>Six truths the education establishment refuses to name</h2>
+
+    <p>Any honest vision of the 2031 classroom begins with six truths about what schools in 2026 actually are. Each is uncomfortable. Each contradicts some piece of the current reform consensus. Each is defensible from evidence, history, and institutional experience.</p>
+
+    <p>First: schools are load-bearing infrastructure for the modern family, independently of whatever happens in the curriculum. In 1970, roughly half of American mothers with children under 18 were in the labor force. By 2024, the figure is around 75%. Dual-earner households are the statistical norm. Schools are, primarily, the institution that makes modern working family life possible.</p>
+
+    <p>The pandemic proved this empirically: given the option to keep children home, the vast majority of parents — even those who could theoretically work from home — wanted their children back in buildings, urgently. What was demanded was not academic rigor. It was the durable physical space where children are cared for, supervised, fed, and held for eight hours a day.</p>
+
+    <p>Parents are openly or secretly excited to send their children to school for someone else to take care in raising their child. The education establishment has spent a generation refusing to name this, and the refusal is part of why the gap has not moved. The funding, staffing, and accountability architecture is built for the secondary purpose — instruction — while the primary purpose — the care and raising of children — goes unexamined and unmeasured.</p>
+
+    <p>Second: parental trust in schools rests on a single foundation the establishment does not name. Every parent had a favorite teacher. Ask any adult — including the adults who most loudly criticize schools — to name a teacher who mattered to them, and they can, instantly, with the teacher's name, the grade, the subject, and a specific memory.</p>
+
+    <p>Parents are not sending their children to school primarily to receive instruction. They are sending them in the hope, often unspoken, that their child will encounter the teacher they themselves had — the Mrs. Henderson who noticed, the Mr. Rivera who refused to let them give up, the Ms. Chang who stayed after school to listen.</p>
+
+    <p>The memorable teacher is the collateral that underwrites the entire institution. Yet the system does not currently select for, train for, retain, or pay for the teacher-who-gets-remembered. It selects for the teacher-who-delivers-content. Memorable teachers happen in spite of the system, not because of it.</p>
+
+    <p>Third: schools are the civic organ of pluralism — the first place in a child's life where the parents are not in charge of what the child thinks. Horace Mann argued for the common school in the 1830s on precisely this ground. A classroom of children from different households, taught by an adult who is not their parent, exposed to ideas their parents did not choose — this is the engine that reproduces a functional democratic citizenry across generations.</p>
+
+    <p>Every faction in American life currently wants the ideological exposure to be theirs. The common-school deal — your child encounters my child, my child encounters your child, and both learn to function in a society of strangers — has held American public education civically coherent for nearly two centuries. It is under historic strain, and an AI-tutor-at-home future would complete its dissolution.</p>
+
+    <p>Fourth: physical space inside institutions does not disappear when automation arrives. The office did not disappear when the internet was supposed to dissolve it. The factory did not disappear when robotics was supposed to empty it. Both changed substantially; both persisted, because both were performing functions that could not be reduced to the task being automated.</p>
+
+    <p>The classroom is in the third iteration of this same pattern. AI will take over most content delivery, just as software took over typing and robots took over welding. The classroom will change, substantially. It will not disappear. And the institutions that adapted successfully to their automation waves did so by changing what they measured and rewarded.</p>
+
+    <p>The factory stopped measuring pieces-per-hour and started measuring throughput, quality, uptime, safety. The office stopped measuring hours-in-seat and started measuring outputs, collaboration, results. The institutions that kept measuring the automated work and punished the humans who moved on to the real work collapsed or were restructured by force. American K–12, as of 2026, is still measuring pieces-per-hour.</p>
+
+    <p>Fifth: the technology we need already exists. This is the mRNA moment for education. The BioNTech platform developed in Mainz did not invent the immune response; it gave humanity a platform to design targeted interventions in weeks rather than years. AI does not invent learning; it gives us, for the first time in history, a platform capable of designing the specific educational intervention for the specific child at the specific developmental moment.</p>
+
+    <p>For a century, education has operated on a discovery model: design a curriculum that mostly works for a mythical average student, run it through the population, observe who it fails, iterate across decades. Designer education ends that. The platform can now deliver differentiated, adaptive, responsive instruction to every child in a classroom simultaneously, at a quality no single teacher lecturing to 28 can match. This is not speculation about 2031. It is empirical about 2026 capabilities already in production use.</p>
+
+    <p>Sixth: there will not be new money. American public education funding is at or near its political ceiling. Per-pupil spending is at peer-state benchmarks. Pension obligations, health benefits, and fixed costs consume an increasing share of the per-pupil dollar. Enrollment is declining in most states. Federal contributions are flat to shrinking. The political environment will not tolerate higher taxes for education. Any 2031 vision that assumes new funding is a vision that will not survive contact with budget reality.</p>
+
+    <p class="pull-quote">Six truths. The building persists. The teacher persists. The civic function persists. The physical space persists through the automation pattern. The designer-education platform now exists. And the budget does not grow.</p>
+
+    <h2>The economic engine no one is describing</h2>
+
+    <p>Put those six truths together and the shape of the 2031 classroom emerges with unusual clarity — along with the economic engine that has been hiding in plain sight.</p>
+
+    <p>The single largest cost in any school district is teacher labor, roughly 80% of most district budgets. A significant portion of what teachers are currently paid to do is deliver content — stand at the front of the room explaining photosynthesis, demonstrate long division, read aloud from a textbook, run students through grammar exercises, grade quizzes, review homework.</p>
+
+    <p>AI in 2031 will do most of that better than a median teacher in most subjects. Not because AI is smarter than teachers. Because AI can give every child an individual tutor, and no human teacher with 28 students in the room can match that.</p>
+
+    <p>This is the engine: AI takes over content delivery, and teachers are reassigned to the human work only they can do. The teacher does not lose her job. She loses the part of her job that machines now perform better, and gains the time to do the part of the job machines cannot do at all — the memorable-teacher work, the noticing, the listening, the mentoring, the civic modeling, the managing of the social environment of the classroom, the catching of the child who is struggling in ways a test cannot detect.</p>
+
+    <p>The budget does not grow. The same dollars pay the same teachers. But those teachers are now doing different work — higher-value, harder, more human, and more defensible to parents.</p>
+
+    <p>This is the same transition that reshaped the factory floor and the office over the past two generations. The factory did not get a bigger labor budget when robots arrived. Workers were reassigned — from welding to supervision, from assembly to quality control. The factories that treated automation as additive, keeping the old labor structure and layering new technology on top, collapsed under the cost structure. The factories that treated automation as substitutive survived and prospered. Schools face the same choice, and the same outcome awaits.</p>
+
+    <p>Layer AI on top of the existing content-delivery model and the cost structure becomes unsustainable, the technology becomes a compliance burden, and the gap does not close. Reassign the labor and the cost structure holds flat while outcomes improve dramatically.</p>
+
+    <p>The reason this is not happening yet is not cost. It is measurement. The reallocation cannot happen by exhortation. It will not happen by district-by-district heroism. It will not happen by state mandate without an enforcement mechanism. It will happen only if the accountability regime makes the reassignment measurable, visible, and defensible.</p>
+
+    <p>I have built this before, in a different domain. When GASB 45 forced public agencies to recognize retiree-benefit obligations on the balance sheet, the reform did not succeed because agencies were given new money. They were not. It succeeded because agencies were forced to see their obligations honestly, and once the obligations were visible, rational allocation decisions followed. Some agencies prefunded. Some restructured benefits. Some established trust funds.</p>
+
+    <p>The specific responses varied, but the requirement to see the obligation clearly — to measure it, to audit it, to report it in a form the public could understand — drove structural change across an entire public sector. The measurement was the mechanism. The accountability regime was the enforcement. The local jurisdiction was the decision-maker. The state was the framework. Distributed accountability works when the measurement is designed correctly. It fails when the measurement is designed badly or not at all.</p>
+
+    <p>The 2031 education accountability regime must operate on the same principle. Content-mastery measurement continues, but backgrounded, because content mastery is now a near-guaranteed commodity output of a working platform. Foregrounded are the measurements that capture what actually matters for 2031 outcomes: oral fluency as an independent construct from written mastery; social-trajectory patterns revealed by aggregated behavioral data about how children move through the school day; civic-mixing indices that show whether the school is performing its pluralism function; character and developmental indicators visible in the accumulated record of a child's engagement, persistence, and growth.</p>
+
+    <p>These are harder to measure than a multiple-choice test. They are not impossible. The AI rewriting the economy is the tool that makes measuring them at scale finally tractable. The measurement revolution and the pedagogical revolution are the same revolution.</p>
+
+    <h2>A day in the life of Maya, 2031</h2>
+
+    <p>Vision without a concrete picture is just rhetoric. So let me describe a single day in the life of one child in the 2031 classroom, in enough detail that the design decisions are visible.</p>
+
+    <p>Maya is nine years old, in third grade, at an elementary school somewhere in California in March 2031. She arrives at 7:52 AM. As she comes through the front gate, the school's sensing infrastructure — cameras above entrances, Wi-Fi location logging on her school tablet — registers her arrival as an anonymized identifier. The system is not secret. Her parents received plain-language disclosure when she enrolled. They have a parent portal where they can see their own child's data.</p>
+
+    <p>They have meaningful opt-out options. They chose in. The governance principles are explicit: data is aggregated before it is useful, individual records are accessible only to named staff with specific operational need, vendors do not own the data or use it to train commercial models, the district is custodian and the district is accountable. These principles are not negotiable. They are the reason the system is defensible.</p>
+
+    <p>Maya walks toward her classroom. The system notices she is walking alone, as she has walked alone for the past eleven school days — a pattern change from the previous months when she walked with a cluster of three other girls. The pattern-detection system does not alert the principal dramatically. It surfaces on the morning dashboard of her teacher, Ms. Rivera, a short list of children whose social-contact patterns have shifted in the past two weeks. Maya is on that list. Ms. Rivera sees her name and understands what the shift means, because Ms. Rivera is the human in the loop — the adult whose job is to notice what the system surfaces and to decide what to do about it.</p>
+
+    <p>At 8:05, at the start of the morning's reading block, Ms. Rivera sits down next to Maya and asks her what she is reading. She listens. She follows up on something Maya mentioned last week about her grandmother's garden. Five minutes of attention, directed by the data toward the child who most needed it, produced without any intrusive adult gaze, uncovered only because the measurement infrastructure revealed the pattern and the human adult acted on it. This is the memorable-teacher function operating with tooling it has never had before.</p>
+
+    <p>At 8:30, the morning's panels rearrange themselves around the perimeter of the classroom. Ms. Rivera is seated at her desk, looking at her pixel-cluster display.</p>
+
+    <p>Each of her 28 children is represented as a cluster whose color and pattern indicate their current state: engaged, struggling, distracted, in flow. The boards around the room are configured for the morning's range of learning tasks — one panel running a phonics scaffold at Maya's exact reading level, another running a writing workshop for the six children ready for it, another running math through stories, another open for free reading with AI reading-companions. Children can remain in their seats working on individual devices, or they can walk over to the panel that interests them most. Some walk. Some stay. Some cluster at panels. Some work alone. The classroom is a coordinated heterogeneous environment, not a synchronized homogeneous one.</p>
+
+    <p>Maya walks to the reading panel. She finds herself standing next to Mateo, whom she has not spoken to in six weeks. They read together at the panel's prompting. The platform observes that Maya's reading pace has improved since last Tuesday and adjusts the difficulty slightly. Ms. Rivera, watching from her desk, sees Maya's pixel cluster shift into the engaged-and-progressing state and registers, without making a fuss, that her 8:05 intervention worked.</p>
+
+    <p>At 11:45, the children go to lunch. The sensing system logs arrivals in the cafeteria. Maya pauses for a moment — a moment Ms. Rivera would never have seen — scanning the tables. She sees Mateo at a table with two other children. She walks over and sits down. The pattern-detection system notes that Maya has joined a table for the first time in 12 school days.</p>
+
+    <p>While the children eat and then go to recess, Ms. Rivera sits down with her own lunch at 11:50. Her display is in front of her. The platform has prepared her lunchtime briefing. For each of her 28 children, it summarizes the morning: what the system flagged, what the system observed, what her decisions produced.</p>
+
+    <p>Diego's entry shows a morning math assignment that went badly, with the platform hypothesizing a misunderstanding of a prior concept rather than the current one and recommending reassignment. Aisha's entry flags an anomaly — high engagement but unusually thin written output — without interpretation, leaving the judgment to Ms. Rivera.</p>
+
+    <p>By 12:25, Ms. Rivera has reviewed the briefing, affirmed some recommendations, overridden others based on her knowledge of specific children, and the afternoon's configuration has been adjusted to what the morning revealed. This is the same-day feedback loop no industrial-era teacher has ever had, and it is the mechanism that makes designer education actually responsive rather than theoretical.</p>
+
+    <p>At 12:30, the children return from recess. Ms. Rivera calls them in and asks them to stand beside their seats. 'Simon says hands on your head.' Hands go up. 'Simon says hands on your shoulders.' Hands move. 'Touch your knees.' Two children bend; the rest catch the trap. The room laughs.</p>
+
+    <p>'Simon says hop on one foot.' The room hops. Ms. Rivera is reading the room even as she plays. She sees Diego laughing, which is a good sign after his difficult morning. She sees Aisha participating fully. She sees Maya laughing next to Mateo. The three-minute game ends. The children sit. The afternoon panels begin to configure themselves.</p>
+
+    <p>Nothing in this scene requires magical technology. Every element is achievable on capabilities already in production use by 2026. The classroom is still a room. The teacher is still the human who matters. The building is still load-bearing infrastructure for working families. The socialization is still happening. The civic function is still being served. The budget is flat because Ms. Rivera is not spending her morning delivering phonics instruction to 28 children simultaneously; the platform is delivering differentiated phonics at each child's level, and Ms. Rivera is doing the uniquely human work her training and experience now prepare her for.</p>
+
+    <p>The teacher in this vision is not replaced. The teacher is elevated. Her physical demand is reduced — she is not standing for six hours. Her cognitive demand is concentrated on judgment and attention rather than undifferentiated volume. Her feedback loop is visible — she sees her interventions work. Her grading burden is gone — the platform grades routine work in seconds and surfaces for her judgment only the work that requires it. Her evenings and weekends belong to her family. The profession that the industrial-era classroom ground down to exhaustion by year seven becomes, in 2031, a profession a thoughtful person can do for a lifetime without burning out. The compensation and credentialing structures must follow this redefinition. A teacher whose work is orchestration, judgment, and relationship is doing harder and more consequential work than a content-delivery teacher. These reforms follow from the architectural shift; they do not precede it.</p>
+
+    <h2>What AI cannot solve</h2>
+
+    <p>I have spent this essay arguing that AI, properly deployed inside a durable school institution with a rebuilt measurement regime, can close the academic gap that has not moved in twenty years. I want to be equally honest about what AI cannot solve.</p>
+
+    <p>The single strongest determiner of a child's educational trajectory is what happens in the child's home. This is not speculation. It is the most robust finding in fifty years of education research — Heckman's work on early childhood, the Coleman Report of 1966, Moving to Opportunity, the mobility work of Raj Chetty and John Friedman. Schools matter. Teachers matter. Parents and home environment matter more, and by a substantial margin.</p>
+
+    <p>I have seen this with my own eyes across decades as a school board member and parent. At back-to-school night, year after year, the parents in attendance were the parents of the children in the National Honor Society. The parents of the children who were struggling, who were failing, who needed the institutional attention most — those parents were the ones who did not come. Any experienced teacher, administrator, or principal will tell you the same. The gap between the engaged family and the absent family opens before kindergarten and widens every school year.</p>
+
+    <p>It is essential to say plainly that most of the absent parents are not indifferent. They are working two or three jobs. They are single mothers who cannot take an evening off without losing income. They are immigrants whose English is insufficient for the school environment. They are adults who experienced school themselves as a site of humiliation and who find school buildings genuinely unwelcoming.</p>
+
+    <p>They are dealing with substance use, incarceration, domestic instability, or mental illness in the household. They are often, at the simplest level, exhausted in ways that middle-class families do not fully understand. A small number are truly indifferent. Most are overwhelmed. All look the same from the teacher's vantage point, which is part of why schools have struggled to design interventions that fit any of them well.</p>
+
+    <p>The history of parent-engagement interventions is discouraging. Title I parent-involvement requirements, parent liaisons, home-visit programs, parent academies, text-message systems, grade-portal apps — all have produced disappointing results at scale. The parents who engage engage; the parents who do not, do not. The structural forces keeping them away are too deep for conference scheduling and app design to overcome.</p>
+
+    <p>AI does not solve this. No technology does. But AI changes several specific constraints in useful ways.</p>
+
+    <p>The language barrier largely dissolves — the platform can communicate with each parent in their home language at their convenient time in a warm, jargon-free register. The time barrier is partially addressed — asynchronous exchange on the parent's schedule replaces synchronous engagement on the school's schedule.</p>
+
+    <p>The cultural barrier softens. The shame barrier is reduced though not eliminated — a parent who experienced school as humiliation does not have to walk back into a school building to engage with their child's learning. The information asymmetry can be closed — every parent receives the same proactive, specific, actionable summary of their child's day, not just the middle-class parents who know how to navigate the grade portal. These are real improvements. They are not a solution.</p>
+
+    <p>The reframing that must happen is this: the 2031 school's mission must explicitly include partial substitution for parent engagement where parent engagement is insufficient. This does not mean schools replace families. It does not mean teachers become parents. It does not mean the state raises children.</p>
+
+    <p>It means that the 2031 school recognizes that some children will arrive each morning from homes where no one read to them the night before, no one asked about their day, no one will supervise homework, no one will attend back-to-school night. For these children, the school must do more of the work that middle-class parents do naturally, and it must do so without shame or stigma directed at the family.</p>
+
+    <p>This is already happening, implicitly, in the best schools serving high-poverty communities. They feed the children three meals a day. They provide clothing when needed. They run after-school programs that extend the school day for children who would otherwise go home to empty apartments. They have social workers on staff. They offer summer programs that mitigate the summer learning loss that devastates low-income children. All of this is partial substitution for family resources that are not there. All of it is done without anyone saying out loud that this is what it is.</p>
+
+    <p>The 2031 vision can make this explicit, systematic, well-funded through reallocation, and well-measured. The school day can extend to 6 PM for children whose families need that. The platform can provide an after-school AI-companion that gives the child the reading-aloud adult presence they do not get at home. The community can organize mentoring programs so that every child has at least one additional adult in their life — the research on this, from Big Brothers Big Sisters and comparable programs, shows that a single consistent adult mentor can meaningfully change a child's trajectory.</p>
+
+    <p>Churches, clergy, service organizations, and retirees are an enormous latent civic resource in every community, and they can be organized around the children whose home circumstances require compensating structures. The goal is not to solve parent indifference. The goal is to build a school system that succeeds for children regardless of whether parent engagement is or is not present. That is a more honest ambition, a more achievable one, and a more just one.</p>
+
+    <h2>The window is five years</h2>
+
+    <p>There is a narrow window in which the 2031 classroom can be designed deliberately rather than forced chaotically. AI capability is advancing faster than the institutional response. If the country does not define what it wants the 2031 classroom to be, the 2031 classroom will be defined by whichever vendor, foundation, or political faction moves most decisively in the absence of a plan.</p>
+
+    <p>The alternatives are not pretty. Fragmentation of the common-school deal into ideologically branded microschools. Hollowing out of the teaching profession through poorly managed automation. Erosion of parental trust as the old accountability regime visibly fails. Collapse of the civic function that makes democratic life possible. And a widening of the at-home gap as affluent families absorb AI's benefits and poor families do not.</p>
+
+    <p>The window to prevent this is short. Five years.</p>
+
+    <p>What is required is not more funding, not another technology initiative, and not a change of political administration. What is required is the recognition that schools are doing several things at once — caring for children of working families, providing the civic space where pluralism is reproduced, raising children in partial substitution for the homes that cannot, and instructing them in content — and that AI is about to automate only one of those things, the instruction.</p>
+
+    <p>The other three are what schools actually are for. The measurement and accountability regime has been calibrated to the one thing about to be automated, and it must be rebuilt to measure the three things that cannot be.</p>
+
+    <p>I am writing this because I am 83, and my own remaining working years are limited, and I have seen a distributed accountability regime get built right before and I know what it looks like when it is done wrong. What GASB 45 did for the public sector's retirement obligations, a properly designed AI-era accountability regime can do for the public sector's educational obligations. The principle is the same: measure honestly, allocate rationally, act collectively, and let the jurisdiction-level decisions compound into a system-wide transformation.</p>
+
+    <p>This essay names 2031 because that is the horizon on which the design decisions must be made. It names Maya because every abstraction must cash out in a child whose name we can say. It names six beams because those are the structural commitments that cannot be compromised. It is honest about the parent gap because anything less is a lie.</p>
+
+    <p class="pull-quote">Close the gap. Not by adding money. Not by adopting a technology. Not by replacing teachers. Close it by building the 2031 classroom this essay describes — and the measurement regime that will let us know, year by year, whether we are doing it.</p>
+
+    <p>That is the work. The architecture is here. The moment is now.</p>
+
+    <div class="author-box">
+        <p><em>Brian Demsey is founder of <a href="https://h-edu.solutions">H-EDU.Solutions</a> and <a href="https://hallucinations.cloud">Hallucinations.cloud</a>. He writes at The Information and at demsey.com. He was previously West Region Managing Partner for Actuarial, Benefits & Compensation at Ernst & Young, founder of Demsey, Filliger & Associates, and a trustee of the Capistrano Unified School District.</em></p>
+    </div>
+
+</article>
+<footer>
+    <div class="container">
+        <div class="footer-bottom">
+            <p>&copy; 2026 Brian Demsey. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
