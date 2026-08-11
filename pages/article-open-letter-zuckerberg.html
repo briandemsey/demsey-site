@@ -33,8 +33,10 @@
         .source-box { background: #f5f3f0; padding: 20px 24px; border-radius: 8px; margin-bottom: 32px; border-left: 4px solid #B8902A; }
         .source-box p { margin-bottom: 0; font-size: 0.95rem; color: #555; text-align: left; }
         .source-box .source-label { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: #B8902A; margin-bottom: 8px; display: block; }
-        .author-box { background: #f5f3f0; padding: 24px; border-radius: 8px; margin: 32px 0; border-left: 4px solid #1B2A4A; }
+        .author-box { background: #f5f3f0; padding: 24px; border-radius: 8px; margin: 32px 0; border-left: 4px solid #1B2A4A; display: flex; align-items: center; gap: 20px; }
+        .author-box img { width: 72px; height: 72px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
         .author-box p { margin-bottom: 0; font-size: 0.95rem; color: #555; }
+        @media (max-width: 480px) { .author-box { flex-direction: column; align-items: flex-start; } }
         .pull-quote { font-size: 1.4rem; font-style: italic; color: #1B2A4A; text-align: center; margin: 32px 0; padding: 24px; border-top: 2px solid #B8902A; border-bottom: 2px solid #B8902A; }
         .section-break { text-align: center; margin: 28px 0; font-size: 1.2rem; color: #888; }
         .signoff { text-align: right; font-style: italic; margin-top: 24px; }
@@ -148,6 +150,7 @@
     <p class="section-break">&#8212;</p>
 
     <div class="author-box">
+        <img src="../assets/brian-demsey-author.png" alt="Brian Demsey">
         <p><em>Brian Demsey<br>Spearfish, South Dakota<br>Founder, hallucinations.cloud<br><br>
         <a href="mailto:bdemsey@demsey.com">bdemsey@demsey.com</a><br>
         949-291-1422</em></p>
