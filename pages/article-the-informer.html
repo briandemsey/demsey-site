@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Informer: Not What You Think | Brian Demsey</title>
+    <meta name="description" content="Where the world stands in 2026, and where it has stood before.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Georgia', 'Times New Roman', serif; line-height: 1.7; color: #2c2c2c; background: #faf9f7; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        header { background: rgba(45, 52, 54, 0.95); padding: 16px 0; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        header .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { color: #fff; font-size: 1.4rem; font-weight: 600; text-decoration: none; }
+        nav { display: flex; gap: 32px; }
+        nav a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 0.95rem; }
+        nav a:hover { color: #fff; }
+        .hero { background: linear-gradient(135deg, rgba(28, 28, 28, 0.65), rgba(45, 45, 45, 0.75)), url('../assets/the-informer-hero.png') center/cover no-repeat; background-color: #1c1c1c; color: white; padding: 120px 24px 60px; text-align: center; }
+        .hero .kicker { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.75; margin-bottom: 12px; }
+        .hero h1 { font-size: 2.4rem; font-weight: 400; margin-bottom: 16px; max-width: 900px; margin-left: auto; margin-right: auto; }
+        .hero .subtitle { font-size: 1.1rem; opacity: 0.95; max-width: 700px; margin: 0 auto; font-style: italic; }
+        .hero .meta { margin-top: 20px; font-size: 0.9rem; opacity: 0.7; }
+        .article-content { max-width: 800px; margin: 0 auto; padding: 40px 24px; }
+        .article-content h2 { font-size: 1.6rem; margin-top: 40px; margin-bottom: 16px; color: #2d3436; }
+        .article-content p { font-size: 1.05rem; color: #444; margin-bottom: 18px; line-height: 1.8; }
+        .article-content ul, .article-content ol { margin: 16px 0 16px 24px; }
+        .article-content li { font-size: 1.05rem; color: #444; margin-bottom: 10px; line-height: 1.7; }
+        .article-content hr { border: none; border-top: 1px solid #ddd; margin: 32px 0; }
+        .article-content a { color: #4a7c6f; text-decoration: none; }
+        .article-content a:hover { text-decoration: underline; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #4a7c6f; text-decoration: none; font-size: 0.95rem; }
+        .back-link:hover { text-decoration: underline; }
+        .article-content .edition-switch { background: #f5f3f0; padding: 12px 16px; border-radius: 6px; font-size: 0.95rem; color: #555; }
+        .article-content .intro-note { font-style: italic; color: #666; font-size: 0.98rem; margin-bottom: 28px; }
+        .fn-ref { font-size: 0.72em; line-height: 0; margin-left: 1px; }
+        .fn-ref a { font-weight: 600; padding: 0 2px; }
+        .fn-ref a, .footnotes li, #notes { scroll-margin-top: 90px; }
+        .article-content .footnotes li, .article-content .sources li { font-size: 0.92rem; color: #555; overflow-wrap: anywhere; }
+        .footnotes li:target, .fn-ref a:target { background: #fff6dc; border-radius: 4px; }
+        .fn-back { margin-left: 6px; }
+        .author-box { background: #f5f3f0; padding: 24px; border-radius: 8px; margin: 32px 0; border-left: 4px solid #1c1c1c; }
+        .article-content .author-box p { margin-bottom: 6px; font-size: 0.95rem; color: #555; }
+        footer { background: #2d3436; color: white; padding: 40px 0 20px; margin-top: 40px; }
+        .footer-bottom { text-align: center; color: rgba(255,255,255,0.5); font-size: 0.85rem; }
+        @media (max-width: 768px) { .hero h1 { font-size: 1.8rem; } nav { display: none; } }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <a href="../index.html" class="logo">Brian Demsey</a>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../index.html#articles">Articles</a>
+            <a href="../index.html#articles-annotated">Articles Annotated</a>
+            <a href="../index.html#gallery">Gallery</a>
+            <a href="../index.html#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+<section class="hero">
+    <div class="container">
+        <h1>The Informer: Not What You Think</h1>
+        <p class="subtitle">Where the world stands in 2026, and where it has stood before</p>
+        <p class="meta">Brian Demsey | September 2026</p>
+    </div>
+</section>
+<article class="article-content">
+    <a href="../index.html#articles" class="back-link">&larr; Back to Articles</a>
+
+    <p class="edition-switch">Every figure in this article is sourced. <a href="article-the-informer-annotated.html">Read the annotated edition &rarr;</a></p>
+
+    <p>I am an informer. Not what you think. I don't rat on people, and I don't belong to The Information's club, although that would be a dream job. I inform. I have deeply ingrained values, opinions and, yes, prejudices. As an informer, I try my best to keep them out of what follows. You can judge whether I succeeded.</p>
+
+    <p>Someone asked me recently how today's world compares with the past: the politics of nations, the economies, the unrest, and the plight of the average person. It is a fair question, and the answer depends on which part of the picture you look at.</p>
+
+    <h2>Key Points</h2>
+
+    <ul class="key-points">
+        <li>democracy is back to 1978 levels</li>
+        <li>conflicts between nations at a record high</li>
+        <li>world government debt the highest since World War II</li>
+        <li>protests in more than 60 countries in a year</li>
+        <li>ordinary families squeezed, not starving</li>
+        <li>religion fueling politics, not calming it</li>
+        <li>the worst since the late 1970s, with echoes of the 1930s</li>
+    </ul>
+
+    <h2>Politics: back to 1978</h2>
+
+    <p>The Varieties of Democracy Institute in Sweden, which maintains the largest dataset on democracy in the world, reports that global democracy has fallen back to its 1978 level. Autocracies now outnumber democracies, 92 to 87. Nearly three quarters of the world's people live under autocratic rule, and only about 7 percent live in liberal democracies. The institute says the world has never before seen so many countries sliding toward autocracy at the same time, and the slide now reaches established democracies: six of the ten countries newly identified as autocratizing are in Europe and North America.</p>
+
+    <p>The historical echo is the 1930s, when mature democracies also backslid. The difference is method. Then it was marches and coups. Now it is gradual and legal: pressure on the press, the courts and civil society, one step at a time.</p>
+
+    <h2>War: a norm is breaking</h2>
+
+    <p>For most of the years since 1945, wars between nations were rare. Most fighting was civil war. That norm is eroding. The Uppsala Conflict Data Program, the standard reference on armed conflict, counted eight conflicts between states in 2025, up from two in 2023 and the most since record keeping began in 1946. It recorded 65 conflicts involving governments, also a record, and 13 that reached the level of war, with at least 1,000 battle deaths, the most since 1992. Roughly 244,600 people died in organized violence in 2025, the second-deadliest year since the Rwandan genocide.</p>
+
+    <h2>The economy: 1973 with less room to respond</h2>
+
+    <p>The war with Iran that began on February 28 closed the Strait of Hormuz, through which about a fifth of the world's oil normally passes. Analysts have called it the largest energy disruption in recorded history. Brent crude peaked near $120 a barrel in March, and it was back above $100 in September after renewed attacks on shipping, at $104.67 on September 24.</p>
+
+    <p>Anyone who remembers the 1973 embargo knows the pattern: an oil shock, rising prices, slowing growth. The International Monetary Fund now projects world growth of 3.0 percent for 2026, below the 3.7 percent average of 2000 to 2019, with inflation turning up again.</p>
+
+    <p>What is different from 1973 is the balance sheet. Global public debt is now close to 100 percent of world output, the highest since World War II. In the United States, interest on the federal debt passed $1 trillion in the first eleven months of this fiscal year, more than any category of federal spending except Social Security. Governments are meeting this shock with far less room to cushion it.</p>
+
+    <h2>Unrest: 1968 again</h2>
+
+    <p>The Carnegie Endowment counts more than 113 significant antigovernment protests in over 60 countries in the past twelve months. Many are led by the young, from Nepal and Madagascar to Indonesia, Peru and India, and many are organized across borders. The complaints are familiar: corruption, jobs, the cost of living.</p>
+
+    <p>The echo is 1968, when a large young generation took to the streets on several continents at once. The cautionary note from that era applies too. In Madagascar, youth protests toppled a government, and the military officer who then seized power appears to be consolidating it and sidelining the movement that made it possible.</p>
+
+    <h2>The average person: where the gloom breaks down</h2>
+
+    <p>Here the historical comparisons stop working in the pessimist's favor. The World Bank estimates that about one person in ten lives in extreme poverty, under $3 a day. Two centuries ago, most of humanity did, and the share was far higher within living memory.</p>
+
+    <p>The catch is that progress has stalled. The extreme poverty rate is only three percentage points lower than in 2015, and in the region stretching from the Middle East and North Africa to Afghanistan and Pakistan it is rising. In wealthy countries the strain is a squeeze rather than destitution: fuel, food, and a 30-year mortgage rate of 7.03 percent in the United States.</p>
+
+    <h2>Where religion fits</h2>
+
+    <p>Religion runs through all of this, more as a marker of political identity than as a calming force.</p>
+
+    <p>The central war of 2026 is against a theocracy; its opening strikes killed Iran's Supreme Leader. Religious nationalism has become part of politics in countries as different as India, Turkey, Israel and the United States.</p>
+
+    <p>Meanwhile, the Pew Research Center reports that government restrictions on religion remain near record highs, with 58 countries rated high or very high, and that religious hostility rose sharply in 2023, the latest year measured, driven by harassment of religious minorities and fallout from the Israel-Hamas war, including hostility toward Jews and Muslims.</p>
+
+    <p>Underneath, the religious map is shifting. From 2010 to 2020, Christians remained the largest group but fell to 28.8 percent of the world's population. Muslims grew twice as fast as the world as a whole, mainly through birthrates. The religiously unaffiliated reached 24.2 percent, largely people raised Christian who left.</p>
+
+    <p>You may have read about a religious revival among the young. The data show something narrower: a real increase in attendance among young men, to about 40 percent attending at least monthly, only modest gains among young women, and no broad national revival. The historical echo is 1979, when the Iranian revolution, the rise of the Moral Majority and a Polish pope brought religion back into politics all at once.</p>
+
+    <h2>So, is it the 1930s or the 1970s?</h2>
+
+    <p>The record says a bit of both, and neither. Politically and militarily, the world looks worse than at any time since the late 1970s, with real echoes of the 1930s. Economically, it resembles the 1973 oil shock, with governments carrying far more debt. But the material floor under the average person is higher than in any earlier era, which may explain why today's unrest is mostly about fairness and stalled progress rather than hunger.</p>
+
+    <p>That is the information. What you make of it is yours.</p>
+
+    <div class="author-box">
+        <p><em>Brian Demsey writes from Capistrano Beach, California, and Spearfish, South Dakota.</em></p>
+        <p><a href="https://demsey.com">demsey.com</a> &middot; <a href="https://brianrdemsey.substack.com" target="_blank" rel="noopener">brianrdemsey.substack.com</a></p>
+    </div>
+
+</article>
+<footer>
+    <div class="container">
+        <div class="footer-bottom">
+            <p>&copy; 2026 Brian Demsey. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
