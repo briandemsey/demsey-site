@@ -177,6 +177,19 @@
             text-decoration: underline;
         }
 
+        /* Book Section */
+        .book-section { padding: 70px 0; background: #fff; }
+        .book-feature { display: grid; grid-template-columns: 280px 1fr; gap: 50px; align-items: center; max-width: 960px; margin: 0 auto; }
+        .book-feature img { width: 100%; height: auto; display: block; box-shadow: 0 8px 30px rgba(0,0,0,0.18); }
+        .book-feature .book-label { font-size: 0.85rem; letter-spacing: 2px; text-transform: uppercase; color: #8b7355; margin-bottom: 10px; }
+        .book-feature h2 { font-size: 2.2rem; font-weight: 400; color: #2c2c2c; line-height: 1.2; margin-bottom: 8px; }
+        .book-feature .subtitle { font-style: italic; color: #5a4a3a; margin-bottom: 18px; }
+        .book-feature p { font-size: 1.05rem; margin-bottom: 22px; }
+        @media (max-width: 768px) {
+            .book-feature { grid-template-columns: 1fr; gap: 24px; }
+            .book-feature .book-cover-link { max-width: 240px; margin: 0 auto; display: block; }
+        }
+
         /* Links Section */
         .links-section {
             padding: 60px 0;
@@ -368,6 +381,7 @@
             <a href="pages/ego.html">Ego</a>
             <a href="#articles">Articles</a>
             <a href="articles-annotated.html">Articles Annotated</a>
+            <a href="book.html">Book</a>
             <a href="#gallery">Gallery</a>
             <a href="#contact">Contact</a>
         </nav>
@@ -397,6 +411,22 @@
             </div>
             <div class="narrative-image">
                 <img src="assets/gallery-3.jpg" alt="Brian Demsey stand-up paddleboarding">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Book Section -->
+<section class="book-section" id="book">
+    <div class="container">
+        <div class="book-feature">
+            <a href="book.html" class="book-cover-link"><img src="assets/i-found-the-bug-cover.jpg" alt="Cover of I Found the Bug! by Brian R. Demsey"></a>
+            <div>
+                <p class="book-label">The Book</p>
+                <h2>I Found the Bug!</h2>
+                <p class="subtitle">What AI Gets Right, What It Gets Wrong, and What We Can Do About It</p>
+                <p>Thirty months of working with Claude nearly every day: building apps, publishing websites, and fixing my own computers. A machine that always has an answer, even when it is wrong, and the plain rules that finally made it reliable.</p>
+                <a href="book.html" class="btn">Read the Book</a>
             </div>
         </div>
     </div>
