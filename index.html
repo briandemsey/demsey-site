@@ -176,6 +176,9 @@
         .article-card a:hover {
             text-decoration: underline;
         }
+        .article-card-latest { display: flex; gap: 20px; align-items: flex-start; }
+        .article-card-latest .card-cover { flex: 0 0 90px; }
+        .article-card-latest .card-cover img { width: 90px; height: auto; display: block; box-shadow: 0 4px 14px rgba(0,0,0,0.15); }
 
         /* Book Section */
         .book-section { padding: 70px 0; background: #fff; }
@@ -426,7 +429,7 @@
                 <h2>I Found the Bug!</h2>
                 <p class="subtitle">What AI Gets Right, What It Gets Wrong, and What We Can Do About It</p>
                 <p>Thirty months of working with Claude nearly every day: building apps, publishing websites, and fixing my own computers. A machine that always has an answer, even when it is wrong, and the plain rules that finally made it reliable.</p>
-                <a href="book.html" class="btn">Read the Book</a>
+                <a href="book.html" class="btn">Buy the Book</a>
             </div>
         </div>
     </div>
@@ -438,6 +441,14 @@
         <h2>Articles</h2>
         <p class="section-intro">Insights on AI, technology, and the future</p>
         <div class="articles-grid">
+            <div class="article-card article-card-latest">
+                <a href="pages/article-dear-jessica.html" class="card-cover"><img src="assets/i-found-the-bug-cover.jpg" alt="Cover of I Found the Bug!"></a>
+                <div>
+                    <h3>Dear Jessica: I Found the Bug</h3>
+                    <p>An 84-year-old subscriber on the AI security money pouring into business, and the older Americans it leaves out.</p>
+                    <a href="pages/article-dear-jessica.html">Read Article &rarr;</a>
+                </div>
+            </div>
             <div class="article-card">
                 <h3>The Informer: Not What You Think</h3>
                 <p>Where the world stands in 2026, and where it has stood before.</p>
